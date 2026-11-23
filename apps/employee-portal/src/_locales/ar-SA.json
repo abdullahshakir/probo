@@ -1,0 +1,257 @@
+{
+  "notifications": {
+    "label": "الإشعارات",
+    "unread": "{{count}} غير مقروء",
+    "empty": "لا إشعارات",
+    "documentSignatureRequested": "{{title}} جاهز لتوقيعك",
+    "documentApprovalRequested": "{{title}} في انتظار موافقتك",
+    "taskAssigned": "تم تعيينك {{title}}",
+    "taskMentioned": "تم ذكرُك في {{title}}",
+    "settings": "إعدادات الإشعارات",
+    "markAllRead": "وضع علامة مقروءة على الكل"
+  },
+  "size": {
+    "B": "ب",
+    "KB": "كـ.ب",
+    "MB": "ميغابايت",
+    "GB": "جي بي",
+    "TB": "السل"
+  },
+  "ui": {
+    "richEditor": {
+      "file": "ملف",
+      "imageUnavailable": "الصورة غير متوفرة",
+      "resizeImage": "تغيير حجم الصورة",
+      "enlargeImage": "تكبير الصورة",
+      "enlargeImageNamed": "تكبير {{name}}",
+      "closeImage": "إغلاق الصورة",
+      "uploading": "جارٍ تحميل {{fileName}}…",
+      "uploadFailed": "فشل التحميل",
+      "couldNotUpload": "تعذر رفع {{fileName}}",
+      "tooLarge": "{{fileName}} كبير جدًا",
+      "unsupported": "{{fileName}} ليس ملفًا مدعومًا",
+      "attachFiles": "إرفاق الملفات",
+      "mentionMembers": "اذكر عضوًا",
+      "mentionLoading": "جارٍ البحث…",
+      "mentionNoResults": "لم يتم العثور على أعضاء"
+    }
+  },
+  "topBar": {
+    "tagline": "بوابة الموظف"
+  },
+  "consoleFooter": {
+    "proboConsole": "وحدة تحكم بروبو"
+  },
+  "locale": {
+    "label": "اللغة"
+  },
+  "userMenu": {
+    "notifications": "الإشعارات",
+    "oauthTokens": "رموز OAuth",
+    "switchToDarkMode": "التبديل إلى الوضع الليلي",
+    "switchToLightMode": "التبديل إلى الوضع الفاتح",
+    "help": "مساعدة",
+    "signOut": "تسجيل الخروج",
+    "signOutFailed": "لا يمكن تسجيل الخروج"
+  },
+  "editAvatar": {
+    "title": "صورة الملف الشخصي",
+    "description": "حمّل صورة عامة.",
+    "messages": {
+      "updated": "تم تحديث صورة الملف الشخصي.",
+      "removed": "تم إزالة صورة الملف الشخصي."
+    },
+    "errors": {
+      "update": "فشل في تحديث صورة الملف الشخصي",
+      "remove": "فشل في إزالة صورة الملف الشخصي",
+      "invalidFile": "استخدم صورة بصيغة JPEG أو PNG بحجم 5 ميغابايت أو أقل."
+    },
+    "actions": {
+      "upload": "رفع صورة",
+      "replace": "استبدل الصورة",
+      "remove": "إزالة الصورة",
+      "close": "إغلاق",
+      "change": "تغيير صورة الملف الشخصي"
+    }
+  },
+  "organizationsPage": {
+    "title": "منظمتك",
+    "searchPlaceholder": "ابحث عن المنظمات",
+    "empty": "لا تمتلك الوصول إلى أي بوابات الموظفين بعد.",
+    "emptySearch": "لا توجد منظمات تطابق هذا البحث.",
+    "status": {
+      "authenticated": "موثق",
+      "sessionExpired": "انتهت صلاحية الجلسة",
+      "authenticationRequired": "مطلوب تسجيل الدخول"
+    },
+    "actions": {
+      "open": "فتح",
+      "continue": "متابعة"
+    }
+  },
+  "breadcrumb": {
+    "nav": "فتات الخبز"
+  },
+  "homePage": {
+    "breadcrumb": "الصفحة الرئيسية",
+    "welcome": "مرحبًا {{name}}.",
+    "welcomeFallback": "مرحبًا.",
+    "getStarted": {
+      "title": "ابدأ",
+      "description": "أكمل الخطوات المطلوبة لإتمام إعداد بوابة الموظف الخاصة بك.",
+      "signatures": {
+        "count_one": "وثيقة {{count}} للتوقيع",
+        "count_other": "{{count}} مستندات للتوقيع",
+        "description": "راجع ووقع المستند المخصص لك.",
+        "action": "إشارة"
+      },
+      "approvals": {
+        "count_one": "وثيقة {{count}} للموافقة",
+        "count_other": "{{count}} مستندات للموافقة",
+        "description": "راجع واعتمد المستند المخصص لك.",
+        "action": "يوافق"
+      }
+    },
+    "dashboard": {
+      "view": "عرض",
+      "allDone": "لقد انتهيت تمامًا",
+      "documents": {
+        "title": "وثائق",
+        "description": "وقع واعتمد المستندات المخصصة.",
+        "empty": "لا شيء لمراجعته بعد",
+        "pendingCount_one": "{{count}} المراجعة معلقة",
+        "pendingCount_other": "{{count}} مراجعات معلقة",
+        "action": "مراجعة المستندات"
+      },
+      "tasks": {
+        "title": "مهامي",
+        "description": "راجع وأتم المهام الموكلة إليك.",
+        "empty": "لا شيء للقيام به بعد",
+        "pendingCount_one": "{{count}} مهمة للقيام بها",
+        "pendingCount_other": "{{count}} مهام للقيام بها",
+        "action": "اذهب إلى المهام"
+      },
+      "signatures": {
+        "title": "التواقيع",
+        "description": "قم بالتوقيع على المستندات المخصصة.",
+        "empty": "لا شيء للتوقيع بعد",
+        "pendingCount_one": "وثيقة {{count}} للتوقيع",
+        "pendingCount_other": "{{count}} مستندات للتوقيع",
+        "action": "ابدأ التوقيع"
+      },
+      "approvals": {
+        "title": "الموافقات",
+        "description": "مراجعة المستندات في انتظار الموافقة.",
+        "empty": "لا شيء للموافقة عليه بعد",
+        "pendingCount_one": "وثيقة {{count}} للموافقة",
+        "pendingCount_other": "{{count}} مستندات للموافقة",
+        "action": "ابدأ بالموافقة"
+      },
+      "devices": {
+        "title": "أجهزة",
+        "description": "إدارة أجهزة العمل الخاصة بك.",
+        "connected": "تم توصيل الجهاز",
+        "action": "تسجيل جهاز"
+      },
+      "slack": {
+        "title": "سلاك",
+        "description": "اربط حسابك في سلاك حتى يستطيع بروبوت مساعدتك.",
+        "connected": "تم الاتصال بـ Slack",
+        "hint": "شغّل <cmd>/probot login</cmd> في Slack"
+      }
+    }
+  },
+  "common": {
+    "error": "حدث خطأ ما"
+  },
+  "pagination": {
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "queue": {
+    "previous": "المستند السابق",
+    "next": "المستند التالي",
+    "close": "إغلاق",
+    "progressSignatures": "المستند {{current}} من {{total}} للتوقيع",
+    "progressApprovals": "المستند {{current}} من {{total}} للموافقة",
+    "empty": "لا توجد مستندات متبقية في هذا الطابور"
+  },
+  "viewer": {
+    "pageOf": "الصفحة {{current}} من {{total}}",
+    "previousPage": "الصفحة السابقة",
+    "nextPage": "الصفحة التالية",
+    "zoomIn": "تكبير",
+    "zoomOut": "ابتعد",
+    "download": "تحميل PDF"
+  },
+  "documents": {
+    "lastUpdated": "آخر تحديث",
+    "columns": {
+      "title": "عنوان",
+      "classification": "تصنيف",
+      "type": "نوع",
+      "status": "الحالة",
+      "action": "عمل"
+    },
+    "types": {
+      "other": "آخر",
+      "governance": "الحوكمة",
+      "policy": "سياسة",
+      "procedure": "إجراء",
+      "plan": "خطة",
+      "register": "تسجيل",
+      "record": "سجل",
+      "report": "تقرير",
+      "template": "نموذج",
+      "statement_of_applicability": "بيان بالتطبيق"
+    },
+    "classifications": {
+      "public": "عام",
+      "internal": "داخلي",
+      "confidential": "سري",
+      "secret": "سر"
+    },
+    "versions": {
+      "heading": "سجل الإصدار",
+      "count_one": "نسخة {{count}}",
+      "count_other": "إصدارات {{count}}",
+      "label": "v{{major}}.{{minor}}",
+      "current": "الحالي",
+      "select": "عرض الإصدار {{major}}.{{minor}}",
+      "status": {
+        "inReview": "قيد المراجعة",
+        "approved": "موافق",
+        "rejected": "مرفوض",
+        "voided": "ملغى",
+        "signed": "موقّع"
+      }
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "الصفحة غير موجودة",
+      "description": "الصفحة التي تبحث عنها غير موجودة أو قد تكون قد نُقلت."
+    },
+    "forbidden": {
+      "title": "تم رفض الوصول",
+      "description": "ليس لديك إذن لعرض هذه الصفحة. ارجع إلى مؤسساتك، أو اتصل بالدعم إذا كنت تعتقد أن هذا خطأ."
+    },
+    "serverError": {
+      "title": "حدث خطأ ما",
+      "description": "حدث خطأ من جانبنا. حاول مرة أخرى، أو اتصل بالدعم إذا استمر المشكلة."
+    },
+    "generic": {
+      "title": "غير قادر على تحميل الصفحة",
+      "description": "لم نتمكن من تحميل هذه الصفحة. حاول مرة أخرى، أو اتصل بالدعم إذا استمرت المشكلة."
+    },
+    "actions": {
+      "tryAgain": "حاول مرة أخرى",
+      "backToOrganizations": "العودة إلى المنظمات",
+      "contactSupport": "اتصل بالدعم"
+    },
+    "inline": {
+      "message": "غير قادر على تحميل المحتوى",
+      "retry": "إعادة المحاولة"
+    }
+  }
+}

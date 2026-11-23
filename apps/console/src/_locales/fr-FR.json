@@ -2151,6 +2151,9 @@
       "continue": "Continuer"
     }
   },
+  "locale": {
+    "label": "Langue"
+  },
   "viewerDropdown": {
     "errors": {
       "requestFailed": "La requête a échoué",

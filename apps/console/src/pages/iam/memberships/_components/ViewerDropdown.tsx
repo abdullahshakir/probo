@@ -20,6 +20,7 @@
 
 import {
   CaretDownIcon,
+  GlobeIcon,
   KeyIcon,
   MoonIcon,
   QuestionIcon,
@@ -33,7 +34,11 @@ import { Dropdown } from "@probo/ui/src/v2/Dropdown/Dropdown";
 import { DropdownGroup } from "@probo/ui/src/v2/Dropdown/DropdownGroup";
 import { DropdownItem } from "@probo/ui/src/v2/Dropdown/DropdownItem";
 import { DropdownPopup } from "@probo/ui/src/v2/Dropdown/DropdownPopup";
+import { DropdownRadioGroup } from "@probo/ui/src/v2/Dropdown/DropdownRadioGroup";
+import { DropdownRadioItem } from "@probo/ui/src/v2/Dropdown/DropdownRadioItem";
 import { DropdownSeparator } from "@probo/ui/src/v2/Dropdown/DropdownSeparator";
+import { DropdownSubmenu } from "@probo/ui/src/v2/Dropdown/DropdownSubmenu";
+import { DropdownSubmenuTrigger } from "@probo/ui/src/v2/Dropdown/DropdownSubmenuTrigger";
 import { DropdownTrigger } from "@probo/ui/src/v2/Dropdown/DropdownTrigger";
 import { EditableAvatarButton } from "@probo/ui/src/v2/EditableAvatarButton/EditableAvatarButton";
 import { Text } from "@probo/ui/src/v2/typography/Text";
@@ -44,6 +49,12 @@ import { Link } from "react-router";
 
 import type { ViewerDropdownFragment$key } from "#/__generated__/iam/ViewerDropdownFragment.graphql";
 import type { ViewerDropdownSignOutMutation } from "#/__generated__/iam/ViewerDropdownSignOutMutation.graphql";
+import {
+  LANGUAGE_LABELS,
+  SELECTABLE_LANGUAGES,
+  type SupportedLanguage,
+} from "#/lib/i18n/resolveLanguage";
+import { useChangeLanguage } from "#/lib/i18n/useChangeLanguage";
 import { useMutation } from "#/lib/relay/useMutation";
 import { IdentityAvatarDialog } from "#/pages/iam/_components/IdentityAvatarDialog";
 
@@ -74,8 +85,9 @@ interface ViewerDropdownProps {
 }
 
 export function ViewerDropdown({ identityKey }: ViewerDropdownProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { displayMode, toggleDisplayMode } = useDisplayMode();
+  const [changeLanguage, isChangingLanguage] = useChangeLanguage();
 
   const identity = useFragment<ViewerDropdownFragment$key>(fragment, identityKey);
   const { canListOAuth2AccessTokens, email, fullName, avatar } = identity;
@@ -87,6 +99,7 @@ export function ViewerDropdown({ identityKey }: ViewerDropdownProps) {
 
   const displayName = fullName.trim() || email;
   const avatarSrc = avatar?.downloadUrl;
+  const currentLanguage = i18n.language as SupportedLanguage;
 
   function handleSignOut() {
     void signOut({ variables: {} }).then(() => {
@@ -156,6 +169,30 @@ export function ViewerDropdown({ identityKey }: ViewerDropdownProps) {
               ? t("nav.switchToLightMode")
               : t("nav.switchToDarkMode")}
           </DropdownItem>
+          <DropdownSubmenu>
+            <DropdownSubmenuTrigger iconStart={<GlobeIcon />}>
+              {t("locale.label")}
+            </DropdownSubmenuTrigger>
+            <DropdownPopup side="left" align="start">
+              <DropdownRadioGroup
+                value={currentLanguage}
+                onValueChange={(value: string) => {
+                  changeLanguage(value as SupportedLanguage);
+                }}
+              >
+                {SELECTABLE_LANGUAGES.map(code => (
+                  <DropdownRadioItem
+                    key={code}
+                    value={code}
+                    closeOnClick
+                    disabled={isChangingLanguage}
+                  >
+                    {LANGUAGE_LABELS[code]}
+                  </DropdownRadioItem>
+                ))}
+              </DropdownRadioGroup>
+            </DropdownPopup>
+          </DropdownSubmenu>
           <DropdownItem iconStart={<QuestionIcon />} render={<a href="mailto:support@probo.com" />}>
             {t("viewerDropdown.actions.help")}
           </DropdownItem>

@@ -20,6 +20,7 @@
 
 import {
   CaretDownIcon,
+  GlobeIcon,
   KeyIcon,
   MoonIcon,
   QuestionIcon,
@@ -33,7 +34,11 @@ import { Dropdown } from "@probo/ui/src/v2/Dropdown/Dropdown";
 import { DropdownGroup } from "@probo/ui/src/v2/Dropdown/DropdownGroup";
 import { DropdownItem } from "@probo/ui/src/v2/Dropdown/DropdownItem";
 import { DropdownPopup } from "@probo/ui/src/v2/Dropdown/DropdownPopup";
+import { DropdownRadioGroup } from "@probo/ui/src/v2/Dropdown/DropdownRadioGroup";
+import { DropdownRadioItem } from "@probo/ui/src/v2/Dropdown/DropdownRadioItem";
 import { DropdownSeparator } from "@probo/ui/src/v2/Dropdown/DropdownSeparator";
+import { DropdownSubmenu } from "@probo/ui/src/v2/Dropdown/DropdownSubmenu";
+import { DropdownSubmenuTrigger } from "@probo/ui/src/v2/Dropdown/DropdownSubmenuTrigger";
 import { DropdownTrigger } from "@probo/ui/src/v2/Dropdown/DropdownTrigger";
 import { EditableAvatarButton } from "@probo/ui/src/v2/EditableAvatarButton/EditableAvatarButton";
 import { Text } from "@probo/ui/src/v2/typography/Text";
@@ -44,6 +49,12 @@ import { graphql, useFragment } from "react-relay";
 import type { TopBarUserMenu_identity$key } from "#/__generated__/iam/TopBarUserMenu_identity.graphql";
 import type { TopBarUserMenu_profile$key } from "#/__generated__/iam/TopBarUserMenu_profile.graphql";
 import type { TopBarUserMenuSignOutMutation } from "#/__generated__/iam/TopBarUserMenuSignOutMutation.graphql";
+import {
+  LANGUAGE_LABELS,
+  SELECTABLE_LANGUAGES,
+  type SupportedLanguage,
+} from "#/lib/i18n/resolveLanguage";
+import { useChangeLanguage } from "#/lib/i18n/useChangeLanguage";
 import { useMutation } from "#/lib/relay/useMutation";
 import { IdentityAvatarDialog } from "#/pages/iam/_components/IdentityAvatarDialog";
 
@@ -86,8 +97,9 @@ export function TopBarUserMenu({
   identityKey,
   profileKey = null,
 }: TopBarUserMenuProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { displayMode, toggleDisplayMode } = useDisplayMode();
+  const [changeLanguage, isChangingLanguage] = useChangeLanguage();
 
   const identity = useFragment(topBarUserMenuIdentityFragment, identityKey);
   const { canListOAuth2AccessTokens, email, fullName, avatar } = identity;
@@ -100,6 +112,7 @@ export function TopBarUserMenu({
 
   const displayName = (profile?.fullName ?? fullName).trim() || email;
   const avatarSrc = avatar?.downloadUrl;
+  const currentLanguage = i18n.language as SupportedLanguage;
 
   function handleSignOut() {
     void signOut({ variables: {} }).then(() => {
@@ -170,6 +183,30 @@ export function TopBarUserMenu({
               ? t("userMenu.switchToLightMode")
               : t("userMenu.switchToDarkMode")}
           </DropdownItem>
+          <DropdownSubmenu>
+            <DropdownSubmenuTrigger iconStart={<GlobeIcon />}>
+              {t("locale.label")}
+            </DropdownSubmenuTrigger>
+            <DropdownPopup side="left" align="start">
+              <DropdownRadioGroup
+                value={currentLanguage}
+                onValueChange={(value: string) => {
+                  changeLanguage(value as SupportedLanguage);
+                }}
+              >
+                {SELECTABLE_LANGUAGES.map(code => (
+                  <DropdownRadioItem
+                    key={code}
+                    value={code}
+                    closeOnClick
+                    disabled={isChangingLanguage}
+                  >
+                    {LANGUAGE_LABELS[code]}
+                  </DropdownRadioItem>
+                ))}
+              </DropdownRadioGroup>
+            </DropdownPopup>
+          </DropdownSubmenu>
           <DropdownItem iconStart={<QuestionIcon />} render={<a href="mailto:support@probo.com" />}>
             {t("userMenu.help")}
           </DropdownItem>

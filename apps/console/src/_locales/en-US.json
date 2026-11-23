@@ -1445,6 +1445,9 @@
     "status": { "authenticated": "Authenticated", "sessionExpired": "Session expired", "authenticationRequired": "Authentication required" },
     "actions": { "open": "Open", "continue": "Continue" }
   },
+  "locale": {
+    "label": "Language"
+  },
   "viewerDropdown": {
     "errors": { "requestFailed": "Request failed", "cannotSignOut": "Cannot sign out" },
     "actions": { "notifications": "Notifications", "oauthTokens": "OAuth tokens", "help": "Help", "logout": "Logout" }

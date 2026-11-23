@@ -1,0 +1,44 @@
+{
+  "title": "إعدادات الإشعارات",
+  "breadcrumb": "إعدادات الإشعارات",
+  "email": {
+    "heading": "البريد الإلكتروني",
+    "description": "اختر متى ترسل لك هذه المنظمة بريدًا إلكترونيًا."
+  },
+  "types": {
+    "DOCUMENT_SIGNATURE_REQUESTED": {
+      "label": "طلبات توقيع المستندات",
+      "description": "عندما يحتاج المستند إلى توقيعك."
+    },
+    "DOCUMENT_APPROVAL_REQUESTED": {
+      "label": "طلبات الموافقة على المستندات",
+      "description": "عندما يحتاج المستند إلى موافقتك."
+    },
+    "TASK_ASSIGNED": {
+      "label": "توزيع المهام",
+      "description": "عندما يتم تكليفك بمهمة."
+    },
+    "TASK_MENTIONED": {
+      "label": "ذكر المهام",
+      "description": "عندما يتم ذكر اسمك في مهمة."
+    }
+  },
+  "emailOptions": {
+    "NONE": {
+      "label": "لا شيء",
+      "description": "لا بريد إلكتروني."
+    },
+    "EACH": {
+      "label": "كل",
+      "description": "بريد إلكتروني واحد لكل عنصر جديد."
+    },
+    "REMINDERS": {
+      "label": "التذكيرات",
+      "description": "ما يصل إلى أربع رسائل إلكترونية مجمعة."
+    },
+    "WEEKLY": {
+      "label": "أسبوعي",
+      "description": "بريد إلكتروني يوم الاثنين للعناصر المفتوحة."
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "list": {
+    "title": "النتائج",
+    "description": "إدارة نتائج مؤسستك.",
+    "page": "الصفحة {{page}}",
+    "columns": {
+      "reference": "مرجع",
+      "title": "عنوان",
+      "kind": "لطيف",
+      "status": "الحالة",
+      "priority": "أولوية",
+      "owner": "مالك",
+      "due": "تاريخ الاستحقاق"
+    },
+    "filters": {
+      "allKinds": "جميع الأنواع",
+      "allStatuses": "جميع الحالات",
+      "allPriorities": "جميع الأولويات",
+      "allOwners": "جميع الملاك",
+      "allAudits": "جميع التدقيقات",
+      "loadMoreAudits": "تحميل المزيد"
+    },
+    "kinds": {
+      "minor_nonconformity": "عدم الامتثال الطفيف",
+      "major_nonconformity": "عدم المطابقة الكبيرة",
+      "observation": "ملاحظة",
+      "exception": "استثناء"
+    },
+    "statuses": {
+      "open": "فتح",
+      "in_progress": "قيد التقدم",
+      "closed": "مغلق",
+      "risk_accepted": "تم قبول المخاطر",
+      "mitigated": "مخفف",
+      "false_positive": "إيجابي كاذب"
+    },
+    "priorities": {
+      "low": "منخفض",
+      "medium": "متوسط",
+      "high": "مرتفع"
+    },
+    "values": {
+      "unassigned": "غير معين",
+      "noDueDate": "لا يوجد تاريخ استحقاق"
+    },
+    "actions": {
+      "new": "أضف نتيجة",
+      "delete": "حذف",
+      "menu": "العثور على الإجراءات",
+      "previous": "السابق",
+      "next": "التالي",
+      "document": "وثيقة",
+      "publish": "نشر",
+      "clearFilters": "مسح الفلاتر",
+      "cancel": "إلغاء"
+    },
+    "empty": {
+      "title": "لا توجد نتائج بعد",
+      "description": "أنشئ أول اكتشاف لك للبدء.",
+      "filteredTitle": "لا توجد نتائج متطابقة",
+      "filteredDescription": "امسح الفلاتر لرؤية كل النتائج."
+    },
+    "messages": {
+      "deleted": "تم العثور على الحذف",
+      "created": "تم العثور على"
+    },
+    "errors": {
+      "delete": "فشل في حذف النتيجة",
+      "create": "فشل في إنشاء الاكتشاف"
+    },
+    "deleteConfirmation": "سيؤدي هذا إلى حذف {{referenceId}} بشكل دائم. لا يمكن التراجع عن هذا الإجراء."
+  },
+  "details": {
+    "back": "النتائج",
+    "notFound": "العنصر غير موجود",
+    "properties": "الخصائص",
+    "fields": {
+      "title": "عنوان",
+      "description": "الوصف",
+      "noDescription": "لا وصف",
+      "kind": "لطيف",
+      "status": "الحالة",
+      "priority": "أولوية",
+      "owner": "مالك",
+      "acceptedRisk": "المخاطرة المقبولة",
+      "dateIdentified": "التاريخ المحدد",
+      "dueDate": "تاريخ الاستحقاق",
+      "source": "مصدر",
+      "rootCause": "السبب الجذري",
+      "correctiveAction": "إجراء تصحيحي",
+      "effectivenessCheck": "فحص الفعالية"
+    },
+    "placeholders": {
+      "owner": "تعيين المالك",
+      "dateIdentified": "تم تحديد التاريخ",
+      "dueDate": "تعيين تاريخ الاستحقاق",
+      "risk": "تحديد المخاطر المقبولة"
+    },
+    "tasks": {
+      "title": "المهام",
+      "empty": "لا توجد مهام مرتبطة",
+      "search": "ربط مهمة",
+      "emptySearch": "لم يتم العثور على مهام",
+      "loadError": "تعذر تحميل المهام",
+      "loadMore": "تحميل المزيد",
+      "unlink": "فصل المهمة",
+      "linkError": "فشل في ربط المهمة",
+      "unlinkError": "فشل في فصل المهمة"
+    },
+    "audits": {
+      "title": "التدقيقات المرتبطة",
+      "empty": "لا توجد تدقيقات مرتبطة",
+      "search": "ربط تدقيق",
+      "emptySearch": "لم يتم العثور على أي مراجعات",
+      "loadError": "تعذر تحميل التدقيقات",
+      "loadMore": "تحميل المزيد",
+      "unlink": "فصل التدقيق",
+      "reference": "مرجع التدقيق",
+      "referencePlaceholder": "مرجع",
+      "link": "رابط",
+      "cancel": "إلغاء",
+      "untitled": "تدقيق بدون عنوان",
+      "linkError": "فشل في ربط التدقيق",
+      "unlinkError": "فشل في فصل التدقيق"
+    },
+    "risks": {
+      "empty": "لم يتم العثور على أي مخاطر",
+      "loadError": "تعذر تحميل المخاطر",
+      "loadMore": "تحميل المزيد"
+    },
+    "errors": {
+      "update": "فشل في تحديث النتيجة",
+      "riskRequired": "اختر المخاطرة المقبولة"
+    }
+  },
+  "create": {
+    "title": "اكتشاف جديد",
+    "placeholders": {
+      "title": "العثور على العنوان"
+    },
+    "actions": {
+      "create": "إنشاء نتيجة"
+    }
+  }
+}

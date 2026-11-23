@@ -1,0 +1,54 @@
+{
+  "title": "الوثائق",
+  "tabs": {
+    "all": "الجميع",
+    "public": "عام",
+    "restricted": "مقيد"
+  },
+  "sections": {
+    "reports": "تقارير الالتزام"
+  },
+  "types": {
+    "OTHER": "أخرى",
+    "GOVERNANCE": "الحوكمة",
+    "POLICY": "السياسات",
+    "PROCEDURE": "الاجراءات :",
+    "PLAN": "التخطيط",
+    "REGISTER": "مدونة - يدون",
+    "RECORD": "السجلات",
+    "REPORT": "التقارير",
+    "TEMPLATE": "قوالب رؤوس الآبار البحرية",
+    "STATEMENT_OF_APPLICABILITY": "بيان قابلية التطبيق"
+  },
+  "actions": {
+    "view": "הצג",
+    "getAccess": "طلب الانضمام",
+    "requested": "مطلوب الوصول"
+  },
+  "selection": {
+    "count": "(0 محدد)",
+    "clear": "مسح التحديد",
+    "selectAll": "تحديد الكل",
+    "requestAccess": "طلب الانضمام",
+    "selectRow": "حدد {{title}}"
+  },
+  "empty": {
+    "title": "لا توجد مستندات",
+    "description": "لم تنشر بوابة الامتثال هذه أي مستندات حتى الآن.",
+    "filteredTitle": "لا توجد مستندات تطابق عامل التصفية هذا",
+    "filteredDescription": "جرِّب علامة تبويب مختلفة للاطِّلاع على المستندات المتاحة."
+  },
+  "viewer": {
+    "back": "الوثائق",
+    "copyLink": "نسخ الرابط",
+    "linkCopied": "تم نسخ الرابط إلى الحافظة",
+    "download": "تنزيل",
+    "previewUnavailable": "المعاينة غير متاحة",
+    "downloadToView": "لا يمكن معاينة نوع الملف هذا هنا. قم بتنزيله لعرضه.",
+    "locked": {
+      "title": "الوصول مطلوب لأجل",
+      "description": "ليس لديك حق الوصول إلى هذا المستند بعد.",
+      "signNda": "مراجعة اتفاقية عدم الإفصاح والتوقيع عليها"
+    }
+  }
+}

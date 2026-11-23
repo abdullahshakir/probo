@@ -1,0 +1,40 @@
+{
+  "title": "مهامي",
+  "breadcrumb": "مهامي",
+  "delete": {
+    "title": "حذف المهمة",
+    "description": "هل أنت متأكد أنك تريد حذف هذه المهمة؟",
+    "confirm": "حذف",
+    "cancel": "إلغاء",
+    "deleted": "تم حذف المهمة.",
+    "error": "فشل في حذف المهمة"
+  },
+  "details": {
+    "notFound": "المهمة غير موجودة",
+    "description": "الوصف",
+    "descriptionPlaceholder": "اكتب وصفاً…",
+    "noDescription": "لا وصف",
+    "commentPlaceholder": "اترك تعليقاً…",
+    "send": "إرسال",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "editComment": "تحرير التعليق",
+    "deleteComment": "حذف التعليق",
+    "deleteCommentTitle": "حذف التعليق",
+    "deleteCommentDescription": "هل أنت متأكد أنك تريد حذف هذا التعليق؟",
+    "commentRequired": "أدخل تعليقًا",
+    "commentTooLong": "يجب ألا يزيد التعليق عن {{max}} حرفًا",
+    "commentContentError": "تعذر عرض هذا التعليق",
+    "commentCreated": "تم إضافة التعليق.",
+    "commentUpdated": "تم تحديث التعليق.",
+    "commentDeleted": "تم حذف التعليق.",
+    "commentCreateError": "فشل في إضافة التعليق",
+    "commentUpdateError": "فشل في تحديث التعليق",
+    "commentDeleteError": "فشل في حذف التعليق",
+    "justNow": "الآن فقط",
+    "commented": "<name>{{name}}</name> <time>{{time}}</time>",
+    "showMore": "عرض المزيد",
+    "actorFallback": "شخص",
+    "activityEmpty": "لا توجد أي نشاط حتى الآن"
+  }
+}

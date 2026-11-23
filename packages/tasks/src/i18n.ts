@@ -22,6 +22,7 @@ export const TASKS_NAMESPACE = "@probo/tasks";
 
 const catalogs = {
   "en-US": () => import("./_locales/en-US.json"),
+  "ar-SA": () => import("./_locales/ar-SA.json"),
   "es-ES": () => import("./_locales/es-ES.json"),
   "fr-FR": () => import("./_locales/fr-FR.json"),
   "nl-NL": () => import("./_locales/nl-NL.json"),

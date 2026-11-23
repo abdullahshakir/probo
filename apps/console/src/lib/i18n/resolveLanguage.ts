@@ -20,6 +20,7 @@
 
 export const SUPPORTED_LANGUAGES = [
   "en-US",
+  "ar-SA",
   "fr-FR",
   "de-DE",
   "es-ES",
@@ -37,10 +38,44 @@ export const SUPPORTED_LANGUAGES = [
 
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
+// Languages with shipped UI catalogs in this app. The switcher lists these;
+// other supported tags still resolve from the navigator and fall back to
+// en-US for missing keys.
+export const SELECTABLE_LANGUAGES = [
+  "en-US",
+  "ar-SA",
+  "fr-FR",
+  "nl-NL",
+] as const satisfies readonly SupportedLanguage[];
+
+export type SelectableLanguage = (typeof SELECTABLE_LANGUAGES)[number];
+
+// Native-language labels for the locale switcher (not translated via i18n).
+export const LANGUAGE_LABELS: Record<SupportedLanguage, string> = {
+  "en-US": "English",
+  "ar-SA": "العربية",
+  "fr-FR": "Français",
+  "de-DE": "Deutsch",
+  "es-ES": "Español",
+  "id-ID": "Bahasa Indonesia",
+  "it-IT": "Italiano",
+  "ja-JP": "日本語",
+  "ko-KR": "한국어",
+  "nl-NL": "Nederlands",
+  "pl-PL": "Polski",
+  "pt-PT": "Português",
+  "tr-TR": "Türkçe",
+  "uk-UA": "Українська",
+  "zh-CN": "中文",
+};
+
+const PREFERRED_LANGUAGE_KEY = "probo.preferredLanguage";
+
 // Maps a two-letter language prefix (lowercased) to its canonical supported
 // tag, e.g. any "de*" browser tag resolves to "de-DE".
 const PREFIX_TO_LANGUAGE: Record<string, SupportedLanguage> = {
   en: "en-US",
+  ar: "ar-SA",
   fr: "fr-FR",
   de: "de-DE",
   es: "es-ES",
@@ -56,12 +91,46 @@ const PREFIX_TO_LANGUAGE: Record<string, SupportedLanguage> = {
   zh: "zh-CN",
 };
 
+export function isSupportedLanguage(value: string): value is SupportedLanguage {
+  return (SUPPORTED_LANGUAGES as readonly string[]).includes(value);
+}
+
+export function isRtlLanguage(language: string): boolean {
+  return language === "ar-SA" || language.toLowerCase().startsWith("ar");
+}
+
+export function getPreferredLanguage(): SupportedLanguage | null {
+  try {
+    const stored = localStorage.getItem(PREFERRED_LANGUAGE_KEY);
+    if (stored != null && isSupportedLanguage(stored)) {
+      return stored;
+    }
+  } catch {
+    // private mode / blocked storage — fall through to navigator
+  }
+  return null;
+}
+
+export function setPreferredLanguage(language: SupportedLanguage): void {
+  try {
+    localStorage.setItem(PREFERRED_LANGUAGE_KEY, language);
+  } catch {
+    // Ignore persistence failures; the in-session changeLanguage still applies.
+  }
+}
+
 // Collapse the browser's preferred languages to one of our supported locales
 // by matching the two-letter language prefix (e.g. any "fr*" tag maps to
-// fr-FR). en-US is the ultimate fallback when nothing matches. Resolving to a
-// canonical supported tag here means i18next is never asked to load an
-// unsupported locale; fallbackLng only has to cover individual missing keys.
+// fr-FR). A stored preference wins over the navigator. en-US is the ultimate
+// fallback when nothing matches. Resolving to a canonical supported tag here
+// means i18next is never asked to load an unsupported locale; fallbackLng
+// only has to cover individual missing keys.
 export function resolveLanguage(): SupportedLanguage {
+  const preferred = getPreferredLanguage();
+  if (preferred != null) {
+    return preferred;
+  }
+
   const candidates = navigator.languages?.length
     ? navigator.languages
     : [navigator.language];

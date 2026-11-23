@@ -1,0 +1,234 @@
+{
+  "connectForm": {
+    "name": {
+      "label": "الاسم",
+      "description": "اسم يميز هذه الاعتماد عن الاعتمادات الأخرى لنفس المزود. على سبيل المثال، الإنتاج أو الرئيسي.",
+      "required": "أدخل اسمًا.",
+      "saveFailed": "تعذر حفظ الاسم."
+    }
+  },
+  "marketplacePage": {
+    "title": "سوق",
+    "description": "البائعون الذين يمكن لـ Probo الاتصال بهم.",
+    "thirdParties": {
+      "title": "يمكن توصيل بعض أطرافك الثالثة",
+      "description": "يشير رمز المصباح الكهربائي إلى بائع موجود بالفعل في قائمتك الخاصة بالجهات الخارجية، ولكنه لم يتصل بعد.",
+      "iconLabel": "في أطرافك الثالثة",
+      "all": "جميع البائعين",
+      "filter": "مقترح",
+      "filterAction": "عرض المقترحات"
+    },
+    "permissionDenied": "ليس لديك إذن لربط البائعين.",
+    "connect": "اتصل",
+    "credentialCount_one": "تم توصيل بيانات الاعتماد {{count}}",
+    "credentialCount_other": "تم توصيل بيانات اعتماد {{count}}",
+    "connectTitle": "اتصل {{provider}}",
+    "choose": "اختر كيفية الاتصال بـ {{provider}}.",
+    "methods": {
+      "WORKLOAD_IDENTITY": "هوية عبء العمل",
+      "GITHUB_APP": "تطبيق GitHub",
+      "INSTALL": "تثبيت التطبيق",
+      "OAUTH2": "أوث",
+      "CLIENT_CREDENTIALS": "بيانات اعتماد العميل",
+      "API_KEY": "مفتاح API"
+    },
+    "methodDescriptions": {
+      "WORKLOAD_IDENTITY": "وثق في Probo بدور سحابي. لا سر طويل الأمد.",
+      "GITHUB_APP": "قم بتثبيت تطبيق Probo على GitHub.",
+      "INSTALL": "قم بتثبيت تطبيق Probo في البائع.",
+      "OAUTH2": "قم بتسجيل الدخول مع البائع ومنح الوصول.",
+      "CLIENT_CREDENTIALS": "استخدم معرف العميل وسر العميل.",
+      "API_KEY": "ألصق مفتاح API من البائع."
+    },
+    "documentation": "التوثيق",
+    "credentialPage": {
+      "apiKey": "قم بإنشاء مفتاح API في {{provider}}",
+      "clientCredentials": "إنشاء بيانات اعتماد العميل في {{provider}}"
+    },
+    "fields": {
+      "apiKey": "مفتاح API",
+      "clientId": "معرّف العميل",
+      "clientSecret": "سر العميل",
+      "scope": "نطاق",
+      "datadogSite": "موقع داتادوج",
+      "datadogSitePlaceholder": "اختر موقعًا",
+      "datadogTokenHint": "الصق رمز الوصول إلى الخدمة من حساب خدمة Datadog، مع نطاق user_access_read. كما يعمل رمز الوصول الشخصي حتى تنتهي صلاحيته.",
+      "zendeskSubdomain": "النطاق الفرعي لـ Zendesk",
+      "region": "منطقة",
+      "regionPlaceholder": "اختر منطقة",
+      "regionUnitedStates": "الولايات المتحدة",
+      "regionEurope": "أوروبا",
+      "regionCanada": "كندا",
+      "regionEnterprise": "المؤسسة (ent.1password.com)"
+    },
+    "workloadIdentity": {
+      "propagationHint": "قد يستغرق الاتحاد بضع دقائق للانتشار. إذا ظهر الموصل كغير متصل، انتظر وحاول مرة أخرى.",
+      "fields": {
+        "roleArn": "ARN الدور",
+        "roleArnHelp": "على سبيل المثال: arn:aws:iam::123456789012:role/ProboAudit",
+        "workloadIdentityProvider": "مزود هوية عبء العمل",
+        "workloadIdentityProviderHelp": "على سبيل المثال: المشاريع/123456789012/المواقع/عالمي/أحواض_هوية_الأحمال/معرّف_الحوض/المزوّدين/معرّف_المزوّد",
+        "serviceAccountEmail": "البريد الإلكتروني لحساب الخدمة",
+        "serviceAccountEmailHelp": "مثال: probo-audit@PROJECT_ID.iam.gserviceaccount.com",
+        "tenantId": "معرّف الدليل (المستأجر)",
+        "tenantIdHelp": "على سبيل المثال 11111111-1111-1111-1111-111111111111",
+        "clientId": "معرّف التطبيق (العميل)",
+        "clientIdHelp": "على سبيل المثال 22222222-2222-2222-2222-222222222222",
+        "subscriptionId": "معرّف الاشتراك",
+        "subscriptionIdHelp": "على سبيل المثال 33333333-3333-3333-3333-333333333333",
+        "environment": "بيئة أزور",
+        "environmentGccNote": "تستخدم دول مجلس التعاون الخليجي Azure Public. فقط GCC High و DoD يستخدمان Government.",
+        "issuer": "المصدر",
+        "audience": "جمهور",
+        "subject": "موضوع"
+      },
+      "environments": {
+        "AZURE_PUBLIC": "عام — تستخدم دول مجلس التعاون الخليجي Azure العام",
+        "AZURE_GOVERNMENT": "الحكومة (الخليجية العليا)",
+        "AZURE_GOVERNMENT_DOD": "الحكومة وزارة الدفاع",
+        "AZURE_CHINA": "الصين"
+      },
+      "messages": {
+        "copyFailed": "فشل النسخ",
+        "copiedIssuer": "تم نسخ المصدر.",
+        "copiedAudience": "تم نسخ الجمهور.",
+        "copiedSubject": "تم نسخ الموضوع.",
+        "copiedTerraform": "تم نسخ مقتطف Terraform.",
+        "error": "خطأ"
+      },
+      "errors": {
+        "roleArn": "أدخل ARN صالحًا لدور IAM.",
+        "workloadIdentityProvider": "أدخل مورد موفر هوية عبء العمل صالح.",
+        "serviceAccountEmail": "أدخل بريدًا إلكترونيًا صالحًا لحساب الخدمة.",
+        "tenantId": "أدخل معرف الدليل (المستأجر) الصحيح.",
+        "clientId": "أدخل معرف تطبيق (عميل) صالح.",
+        "subscriptionId": "أدخل معرف اشتراك صالح.",
+        "aws": {
+          "create": "تعذر إنشاء الموصل. تحقق من ARN للدور وحاول مرة أخرى.",
+          "disconnected": "لم يتمكن Probo من تولي دور التدقيق. تأكد من أن الحزمة تم نشرها في هذا الحساب وأن الجهة المصدرة والموضوع يطابقان القيم المعروضة أثناء الإعداد."
+        },
+        "gcp": {
+          "create": "تعذر إنشاء الموصل. تحقق من مورد الموفر وبريد الحساب الخدمي، ثم حاول مرة أخرى.",
+          "disconnected": "لم يتمكن Probo من انتحال حساب خدمة التدقيق. تأكد من تطبيق الوحدة في هذا المشروع وأن الجهة المصدرة والموضوع يطابقان القيم المعروضة أثناء الإعداد."
+        },
+        "azure": {
+          "create": "تعذر إنشاء الموصل. تحقق من معرف المستأجر والعميل والاشتراك، ثم حاول مرة أخرى.",
+          "disconnected": "لم يتمكن بروبو من افتراض هوية التدقيق. تأكد من تطبيق الوحدة وأن المُصدر والموضوع يطابقان القيم المعروضة أثناء الإعداد. قد تستغرق الفيدرالية بضع دقائق."
+        },
+        "delete": "تعذر حذف الموصل. حاول مرة أخرى."
+      },
+      "actions": {
+        "copy": "نسخ",
+        "installViaCloudFormation": "التثبيت عبر CloudFormation",
+        "installViaTerraform": "التثبيت عبر تيرا فورم"
+      }
+    },
+    "connected": "تم الاتصال بالتاجر.",
+    "connectFailed": "تعذر الاتصال"
+  },
+  "listPage": {
+    "title": "وصلات",
+    "description": "البائعون الذين يحمل بروبو شهادة لهم.",
+    "notFound": "المنظمة غير موجودة",
+    "sections": {
+      "connected": "متصل",
+      "available": "متوفر"
+    },
+    "addMore": "أضف المزيد",
+    "suggestDescription": "اختر \"إضافة المزيد\" لمشاهدة القائمة الكاملة للتكاملات التي يدعمها Probo.",
+    "emptyConnected": "لا يوجد بائع متصل بعد.",
+    "emptyConnectedSearch": "لا يتطابق أي بائع متصل مع بحثك.",
+    "checkingStatuses": "جارٍ التحقق من حالة الاتصال…",
+    "emptyAvailable": "كل البائعين المتاحين متصلون بالفعل.",
+    "emptyAvailableSearch": "لا يتطابق أي بائع متاح مع بحثك.",
+    "searchPlaceholder": "ابحث عن البائعين...",
+    "searchConnectorsPlaceholder": "البحث عن الموصلات...",
+    "filters": {
+      "status": "الحالة",
+      "allStatuses": "جميع الحالات"
+    },
+    "created": "تم الإنشاء {{date}}",
+    "accountCount_one": "حساب {{count}}",
+    "accountCount_other": "حسابات {{count}}",
+    "connectedCount": "{{connected}}/{{total}} متصل",
+    "connectionIssues": {
+      "reconnect": "أعد توصيل {{provider}} لاستعادة الوصول.",
+      "credentials": "بيانات اعتماد {{provider}} غير صالحة. لا يمكن لـ Probo قراءة هذا البائع بالبيانات الحالية.",
+      "notAuthorized": "{{provider}} قبل بيانات الاعتماد ولكنه رفض الطلب. تحقق من الأذونات التي يمتلكها هذا الاعتماد، وما إذا كانت الخطة تتضمن واجهة برمجة التطبيقات التي يستخدمها Probo."
+    },
+    "organization": "منظمة",
+    "organizationPlaceholder": "اختر منظمة",
+    "comingSoon": "قريبًا",
+    "actions": {
+      "add": "أضف الموصل",
+      "manage": "يدير",
+      "connectMore": "اتصل أكثر"
+    },
+    "messages": {
+      "connected": "تم الاتصال بالتاجر.",
+      "connectedDescription": "هذا البائع جاهز للاستخدام.",
+      "error": "تعذر الاتصال",
+      "organizationUpdated": "تم تحديث المنظمة."
+    },
+    "errors": {
+      "organization": "فشل في تحديث المؤسسة"
+    }
+  },
+  "detailsPage": {
+    "notFound": "التكامل غير موجود",
+    "status": {
+      "CONNECTED": "متصل",
+      "DISCONNECTED": "غير متصل",
+      "NOT_AUTHORIZED": "غير مصرح",
+      "RECONNECT_REQUIRED": "مطلوب إعادة الاتصال"
+    },
+    "connectors": {
+      "title": "وصلات"
+    },
+    "accounts": {
+      "title": "الحسابات",
+      "empty": "لم يتم تمكين أي حساب على هذه الاعتمادات بعد.",
+      "discoveryFailed": "لا يمكن لـ Probo عرض الحسابات باستخدام هذه البيانات.",
+      "unknown": "مجهول",
+      "disconnect": "قطع الاتصال",
+      "disconnectTitle": "قطع الاتصال بالحساب",
+      "disconnectDescription": "فصل الاتصال يزيل {{name}}. يجب إزالة أي شيء لا يزال يستخدمه أولاً.",
+      "disconnectConfirm": "قطع الاتصال",
+      "loadMore": "عرض المزيد من الحسابات"
+    },
+    "actions": {
+      "back": "وصلات",
+      "close": "إغلاق",
+      "reconnect": "إعادة الاتصال",
+      "delete": "قطع الاتصال",
+      "cancel": "إلغاء",
+      "more": "المزيد من الإجراءات"
+    },
+    "probeError": {
+      "copy": "خطأ في النسخ",
+      "copied": "تم نسخ الخطأ."
+    },
+    "apiKey": {
+      "update": "تحديث مفتاح واجهة برمجة التطبيقات",
+      "title": "تحديث مفتاح واجهة برمجة التطبيقات",
+      "description": "يستبدل مفتاح API المخزن لهذا الموصل. تبقى الأسماء والحسابات الممكّنة كما هي. بالنسبة لـ Tally، يتم إعادة اشتقاق المؤسسة من المفتاح الجديد.",
+      "save": "حفظ مفتاح API",
+      "saved": "تم تحديث مفتاح واجهة برمجة التطبيقات.",
+      "saveFailed": "لم يمكن حفظ مفتاح واجهة برمجة التطبيقات.",
+      "invalid": "أدخل مفتاحًا في النموذج {{example}}."
+    },
+    "delete": {
+      "title": "قطع التكامل",
+      "description": "فصل الاتصال يزيل بيانات الاعتماد التي يحتفظ بها Probo لـ {{name}}. يجب إزالة أي شيء لا يزال يستخدمها أولاً.",
+      "confirm": "قطع الاتصال"
+    },
+    "messages": {
+      "deleted": "تم فصل التكامل.",
+      "accountDisconnected": "تم فصل الحساب."
+    },
+    "errors": {
+      "delete": "فشل في فصل التكامل",
+      "disable": "فشل في فصل الحساب"
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "states": {
+    "backlog": "الموجودات المتأخرة",
+    "todo": "للقيام به",
+    "inProgress": "قيد التقدم",
+    "done": "تم",
+    "canceled": "ملغى",
+    "duplicate": "مكرر"
+  },
+  "priorities": {
+    "urgent": "عاجل",
+    "high": "مرتفع",
+    "medium": "متوسط",
+    "low": "منخفض"
+  },
+  "empty": "لا توجد مهام",
+  "emptyValue": "—",
+  "doesNotRepeat": "لا يتكرر",
+  "noResults": "لا توجد مهام تطابق عوامل التصفية الخاصة بك",
+  "searchPlaceholder": "بحث المهام",
+  "filters": {
+    "status": "الحالة",
+    "allStatuses": "جميع الحالات",
+    "dueDate": "تاريخ الاستحقاق",
+    "anyDueDate": "أي موعد مستحق",
+    "due": {
+      "overdue": "متأخر",
+      "1d": "بعد يوم واحد من الآن",
+      "3d": "بعد ثلاثة أيام من الآن",
+      "1w": "بعد أسبوع من الآن",
+      "1m": "بعد شهر من الآن",
+      "3m": "بعد ثلاثة أشهر من الآن",
+      "none": "لا يوجد تاريخ استحقاق"
+    }
+  },
+  "unassigned": "غير معين",
+  "placeholders": {
+    "state": "ضبط الحالة",
+    "priority": "تعيين الأولوية",
+    "assignee": "تعيين المكلف",
+    "timeEstimate": "تعيين التقدير",
+    "deadline": "تحديد الموعد النهائي",
+    "recurrence": "ضبط التكرار"
+  },
+  "properties": {
+    "title": "الخصائص"
+  },
+  "deadlinePicker": {
+    "today": "اليوم",
+    "tomorrow": "غدًا",
+    "endOfWeek": "نهاية الأسبوع",
+    "nextWeek": "الأسبوع القادم",
+    "custom": "مخصص",
+    "none": "لا شيء"
+  },
+  "durationPicker": {
+    "none": "لا شيء",
+    "custom": "مخصص",
+    "save": "حفظ",
+    "cancel": "إلغاء"
+  },
+  "fields": {
+    "name": "الاسم",
+    "description": "الوصف",
+    "state": "دولة",
+    "priority": "أولوية",
+    "timeEstimate": "تقدير الوقت",
+    "timeEstimateUnit": "وحدة تقدير الوقت",
+    "deadline": "الموعد النهائي",
+    "recurrence": "يكرر",
+    "recurrenceUnit": "وحدة التكرار",
+    "createdAt": "تم الإنشاء",
+    "updatedAt": "مُحدث",
+    "assignee": "الموكَل إليه"
+  },
+  "units": {
+    "S": "ثوانٍ",
+    "M": "دقائق",
+    "H": "ساعات",
+    "D": "أيام",
+    "W": "أسابيع",
+    "MO": "شهور",
+    "Y": "سنوات"
+  },
+  "actions": {
+    "addEstimate": "أضف تقدير",
+    "clearEstimate": "تقدير واضح",
+    "addRecurrence": "أضف فترة",
+    "clearRecurrence": "فترة واضحة",
+    "more": "المزيد من الإجراءات",
+    "delete": "حذف"
+  },
+  "hints": {
+    "recurrenceNeedsDeadline": "حدد موعدًا نهائيًا قبل إضافة فترة التكرار"
+  },
+  "comments": {
+    "title": "التعليقات",
+    "empty": "لا توجد تعليقات بعد",
+    "placeholder": "اترك تعليقًا",
+    "submit": "أضف تعليق",
+    "showMore": "عرض المزيد",
+    "authorFallback": "شخص",
+    "unsaved": {
+      "title": "هل تغادر دون إضافة هذا التعليق؟",
+      "description": "لم يتم إضافة هذا التعليق بعد. مغادرة هذه الصفحة ستؤدي إلى فقدانه.",
+      "stay": "ابقَ",
+      "leave": "غادر"
+    }
+  },
+  "activity": {
+    "title": "نشاط",
+    "empty": "لا توجد أي نشاط حتى الآن",
+    "showMore": "عرض المزيد",
+    "actorFallback": "شخص",
+    "sentences": {
+      "created": "{{actor}} أنشأ هذه المهمة",
+      "updated": "{{actor}} حدّث هذه المهمة",
+      "renamed": "{{actor}} تم إعادة تسميته من {{oldValue}} إلى {{newValue}}",
+      "stateChanged": "{{actor}} غيّر الحالة من {{oldValue}} إلى {{newValue}}",
+      "priorityChanged": "{{actor}} غيّر الأولوية من {{oldValue}} إلى {{newValue}}",
+      "assigned": "{{actor}} عيّن {{newValue}}",
+      "reassigned": "{{actor}} أعيد تعيينه من {{oldValue}} إلى {{newValue}}",
+      "unassigned": "{{actor}} غير مخصص {{oldValue}}",
+      "internalControlLinked": "{{actor}} ربط {{newValue}}",
+      "internalControlChanged": "{{actor}} انتقل من {{oldValue}} إلى {{newValue}}",
+      "internalControlUnlinked": "{{actor}} غير مرتبط {{oldValue}}",
+      "deadlineSet": "{{actor}} حدد الموعد النهائي في {{newValue}}",
+      "deadlineChanged": "{{actor}} غيّر الموعد النهائي من {{oldValue}} إلى {{newValue}}",
+      "deadlineRemoved": "{{actor}} أزال الموعد النهائي",
+      "timeEstimateSet": "{{actor}} حدد تقدير الوقت إلى {{newValue}}",
+      "timeEstimateChanged": "{{actor}} غيَّر تقدير الوقت من {{oldValue}} إلى {{newValue}}",
+      "timeEstimateRemoved": "{{actor}} أزال تقدير الوقت"
+    }
+  },
+  "metadata": {
+    "timeEstimate": "تقدير الوقت",
+    "deadline": "الموعد النهائي"
+  },
+  "recurringBadge": {
+    "tooltip": "يتكرر كل {{interval}}"
+  },
+  "duration": {
+    "seconds_one": "ثانية",
+    "seconds_other": "ثوانٍ",
+    "minutes_one": "دقيقة",
+    "minutes_other": "دقائق",
+    "hours_one": "ساعة",
+    "hours_other": "ساعات",
+    "days_one": "يوم",
+    "days_other": "أيام",
+    "weeks_one": "أسبوع",
+    "weeks_other": "أسابيع",
+    "months_one": "شهر",
+    "months_other": "شهور",
+    "years_one": "سنة",
+    "years_other": "سنوات",
+    "sec_one": "{{count}} ثانية",
+    "sec_other": "{{count}} ثانية",
+    "min_one": "{{count}} دقيقة",
+    "min_other": "{{count}} دقيقة",
+    "hour_one": "{{count}} ساعة",
+    "hour_other": "{{count}} ساعات",
+    "yearShort": "{{count}} سنة",
+    "monthShort": "{{count}} مو",
+    "weekShort": "{{count}} أسبوع",
+    "dayShort": "{{count}} د",
+    "hourShort": "{{count}} ساعة",
+    "minShort": "{{count}} دقيقة",
+    "secShort": "{{count}} ثانية"
+  }
+}

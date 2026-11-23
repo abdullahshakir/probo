@@ -1,0 +1,33 @@
+{
+  "title": "التواقيع",
+  "breadcrumb": "التواقيع",
+  "pending": {
+    "heading": "في انتظار توقيعك ({{count}})",
+    "summaryTitle_one": "وثيقة {{count}} للتوقيع",
+    "summaryTitle_other": "{{count}} مستندات للتوقيع",
+    "summaryDescription": "راجع ووقّع المستندات المطلوبة لإكمال إعدادك كموظف.",
+    "action": "ابدأ التوقيع",
+    "itemAction": "إشارة"
+  },
+  "history": {
+    "heading": "موقّع ({{count}})"
+  },
+  "empty": {
+    "none": {
+      "title": "لا توجد طلبات توقيع بعد",
+      "description": "ستظهر هنا المستندات التي تحتاج إلى توقيعك."
+    },
+    "allDone": {
+      "title": "لقد انتهيت تمامًا",
+      "description": "أنت مُحدث. المستندات الموقعة سابقًا مدرجة أدناه."
+    }
+  },
+  "document": {
+    "instruction": "راجع هذا المستند قبل التوقيع.",
+    "reviewAndSign": "راجع ووقّع",
+    "signed": "لقد وقّعت هذا المستند.",
+    "goToNext": "انتقل إلى المستند التالي",
+    "finish": "أكمل التوقيع",
+    "backToList": "العودة إلى التوقيعات"
+  }
+}

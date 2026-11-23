@@ -42,6 +42,9 @@
   "consoleFooter": {
     "proboConsole": "Probo-console"
   },
+  "locale": {
+    "label": "Taal"
+  },
   "userMenu": {
     "notifications": "Meldingen",
     "oauthTokens": "OAuth-tokens",

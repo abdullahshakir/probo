@@ -28,6 +28,7 @@ import {
 // Keep in sync with iam.SupportedIdentityLocales.
 export const URL_LOCALES = [
   "en",
+  "ar",
   "fr",
   "de",
   "es",
@@ -49,6 +50,7 @@ const DEFAULT_URL_LOCALE: UrlLocale = "en";
 
 const LANGUAGE_TO_URL_LOCALE: Record<SupportedLanguage, UrlLocale> = {
   "en-US": "en",
+  "ar-SA": "ar",
   "fr-FR": "fr",
   "de-DE": "de",
   "es-ES": "es",
@@ -71,6 +73,7 @@ const URL_LOCALE_TO_LANGUAGE = Object.fromEntries(
 // Native-language labels for the locale switcher (not translated via i18n).
 export const URL_LOCALE_LABELS: Record<UrlLocale, string> = {
   en: "English",
+  ar: "العربية",
   fr: "Français",
   de: "Deutsch",
   es: "Español",

@@ -1,0 +1,134 @@
+{
+  "title": "سجّل هذا الجهاز",
+  "breadcrumb": "أجهزة",
+  "registerBreadcrumb": "تسجيل",
+  "addManuallyBreadcrumb": "أضف يدويًا",
+  "list": {
+    "title": "أجهزة",
+    "register": "تسجيل جهاز جديد",
+    "addManually": "أضف يدويًا",
+    "lastActive": "آخر نشاط",
+    "never": "أبدًا",
+    "justNow": "الآن فقط",
+    "pendingHostname": "قيد الانتظار",
+    "connected": "متصل",
+    "disconnected": "غير متصل",
+    "columns": {
+      "hostname": "جهاز",
+      "details": "تفاصيل"
+    },
+    "platforms": {
+      "DARWIN": "ماك أو إس",
+      "WINDOWS": "ويندوز",
+      "LINUX": "لينكس",
+      "FREEBSD": "فري بي إس دي"
+    }
+  },
+  "empty": {
+    "title": "لا توجد أجهزة بعد",
+    "description": "سجّل جهازًا لربطه بمنظمتك ومراقبة حالة أمانه.",
+    "register": "تسجيل الجهاز",
+    "addManually": "أضف يدويًا"
+  },
+  "unavailable": {
+    "title": "التسجيل غير متاح",
+    "description": "ليس لديك إذن لتسجيل الأجهزة في هذه المؤسسة.",
+    "home": "العودة إلى الصفحة الرئيسية"
+  },
+  "steps": {
+    "review": {
+      "title": "مراجعة معلومات الجهاز",
+      "description": "انظر ما سيحفظه وكيل Probo."
+    },
+    "download": {
+      "title": "تحميل الوكيل",
+      "description": "ثبت وكيل سطح المكتب"
+    },
+    "enroll": {
+      "title": "فتح وكيل بروبو",
+      "description": "أكمل تسجيل هذا الجهاز."
+    }
+  },
+  "review": {
+    "title": "مراجعة البيانات المجمعة",
+    "description": "يجمع Probo بيانات التعريف التالية للجهاز لأغراض الجرد وتقرير الوضع.",
+    "understand": "أفهم",
+    "thisDevice": {
+      "title": "هذا الجهاز",
+      "hostname": "اسم المضيف",
+      "platform": "منصة",
+      "osVersion": "إصدار نظام التشغيل"
+    },
+    "identity": {
+      "title": "هوية الجهاز",
+      "hardwareUuid": "معرّف UUID للأجهزة",
+      "hostname": "اسم المضيف",
+      "serialNumber": "الرقم التسلسلي، عندما يكون متاحًا"
+    },
+    "system": {
+      "title": "تفاصيل النظام",
+      "platform": "منصة",
+      "osVersion": "إصدار نظام التشغيل",
+      "agentVersion": "نسخة وكيل بروبو"
+    },
+    "activity": {
+      "title": "إشارات النشاط",
+      "enrollmentTime": "وقت التسجيل",
+      "heartbeats": "نبضات وكيل",
+      "posture": "نتائج فحص الوضعية"
+    }
+  },
+  "download": {
+    "title": "تحميل وكيل بروبو",
+    "description": "قم بتثبيت التطبيق لتأمين هذا الجهاز وربطه بمنظمتك.",
+    "featured": "وكيل Probo لنظام macOS",
+    "continue": "متابعة",
+    "download": "تحميل",
+    "downloadNamed": "تحميل {{title}}",
+    "macosIntel": {
+      "title": "ماك أو إس إنتل",
+      "meta": "ماك أو إس 13.0+"
+    },
+    "windows": {
+      "title": "ويندوز",
+      "meta": "ويندوز 11+"
+    }
+  },
+  "enroll": {
+    "title": "تابع في التطبيق",
+    "description": "افتح وكيل Probo لإكمال تسجيل هذا الجهاز.",
+    "open": "فتح وكيل بروبو",
+    "preparing": "جارٍ التحضير…",
+    "waiting": "في انتظار أول تسجيل وصول للوكيل…",
+    "timedOut": "لم نسمع من الوكيل بعد. تأكد من تثبيت عامل سطح المكتب وتشغيله، ثم حاول مرة أخرى.",
+    "failed": "لم نتمكن من بدء التسجيل. حاول مرة أخرى.",
+    "tryAgain": "حاول مرة أخرى",
+    "enrolled": "هذا الجهاز مسجل.",
+    "enrolledWithHostname": "{{hostname}} مسجل.",
+    "home": "العودة إلى الصفحة الرئيسية"
+  },
+  "addManually": {
+    "title": "التسجيل اليدوي",
+    "creating": "جارٍ إنشاء الجهاز…",
+    "failed": "لم نتمكن من إنشاء رمز التسجيل. حاول مرة أخرى.",
+    "created": "تم إنشاء الجهاز. انسخ رمز التسجيل الآن — لن يتم عرضه مرة أخرى.",
+    "done": "تم",
+    "retry": "حاول مرة أخرى",
+    "back": "العودة إلى الأجهزة",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "copyFailed": "فشل النسخ إلى الحافظة",
+    "token": {
+      "title": "تم إنشاء رمز التسجيل",
+      "description": "شارك رمز التسجيل هذا فقط مع مالك الجهاز من خلال قناة آمنة. يمكن استخدامه مرة واحدة وينتهي بعد سبعة أيام.",
+      "releaseListHint": "تصفح <link>إصدارات probo-agent على GitHub</link> (وسوم probo-agent/v*)، ثم اختر الأرشيف لنظام التشغيل والهندسة المعمارية الخاصة بك (على سبيل المثال probo-agent_Darwin_arm64.tar.gz، probo-agent_Linux_x86_64.tar.gz، أو probo-agent_Windows_x86_64.zip). استبدل vX.Y.Z و OS و ARCH في أمر التنزيل بالقيم من الملف الذي اخترته.",
+      "tabUnix": "ماك أو إس / لينكس",
+      "tabWindows": "ويندوز",
+      "installUnix": "التثبيت على macOS أو Linux (تشغيل من الصدفة مع وصول sudo)",
+      "installWindows": "التثبيت على ويندوز (تشغيل من جلسة PowerShell مرتفعة الصلاحيات)",
+      "downloadStep": "قم بتنزيل الملف الثنائي وضعه",
+      "enrollStep": "قم بتكوين الجهاز وابدأ الوكيل",
+      "securityNotice": "يتم تمرير الرمز كعلم CLI (وليس عبر curl-piped-to-shell أو متغيرات البيئة sudo). بمجرد التثبيت، يقوم العميل بتحديث نفسه من إصدارات GitHub مع التحقق من توقيع cosign."
+    }
+  }
+}

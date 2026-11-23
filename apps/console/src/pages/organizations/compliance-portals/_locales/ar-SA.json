@@ -1,0 +1,967 @@
+{
+  "newPortalPage": {
+    "pageTitle": "بوابة الالتزام الجديدة",
+    "title": "إنشاء بوابة الامتثال",
+    "description": "قم بإعداد بوابة امتثال عامة جديدة. يتم تعيين جزء عنوان URL تلقائيًا عند إنشاء الصفحة.",
+    "fields": {
+      "entityName": {
+        "label": "اسم الكيان",
+        "placeholder": "شركة أكمي"
+      }
+    },
+    "actions": {
+      "create": "إنشاء بوابة الامتثال",
+      "creating": "جارٍ الإنشاء..."
+    },
+    "messages": {
+      "created": "تم إنشاء بوابة الامتثال بنجاح",
+      "successTitle": "النجاح"
+    },
+    "errors": {
+      "create": "فشل في إنشاء بوابة الامتثال",
+      "title": "خطأ"
+    }
+  },
+  "aliasField": {
+    "messages": {
+      "updated": "تم تحديث الاسم المستعار بنجاح.",
+      "removed": "تم إزالة الاسم المستعار بنجاح."
+    },
+    "errors": {
+      "update": "فشل في تحديث الاسم المستعار",
+      "remove": "فشل في إزالة الاسم المستعار"
+    },
+    "placeholder": "مثال: سياسة الخصوصية"
+  },
+  "hostingPage": {
+    "title": "الاستضافة",
+    "description": "انشر بوابتك وقدّمها على نطاق مخصص."
+  },
+  "visitorsPage": {
+    "title": "زوار",
+    "description": "تحكم في من يمكنه قراءة المستندات الخاصة وتطلب توقيع اتفاقية عدم الإفشاء."
+  },
+  "integrationsPage": {
+    "title": "التكاملات",
+    "description": "قم بربط Slack حتى يتم إشعار فريقك بطلبات الوصول."
+  },
+  "brandingPage": {
+    "title": "العلامة التجارية",
+    "description": "اضبط المظهر والملف الشخصي والروابط المخصصة التي يراها الزوار أولاً."
+  },
+  "contentPage": {
+    "title": "محتوى",
+    "description": "اختر الأطر والالتزامات والمراجع المعروضة على صفحة الهبوط."
+  },
+  "rightRequestsPage": {
+    "title": "طلبات الخصوصية",
+    "description": "دع الزوار يقدمون طلبات الخصوصية المتعلقة ببياناتهم الشخصية."
+  },
+  "accessPage": {
+    "description": "أضف الأشخاص إلى البوابة، أو انتظر حتى يقوموا بتسجيل الدخول لطلب المستندات أو قبول اتفاقية عدم الإفشاء."
+  },
+  "visitorPage": {
+    "back": "زوار",
+    "notVisited": "لم يتم زيارته",
+    "visitedOn": "تمت الزيارة في {{date}}",
+    "deactivated": "معطل",
+    "deactivatedCallout": "لا يمكن لهذا الزائر طلب أو استخدام المستندات المحمية حتى تتم إعادة تنشيطها. تظل المنح المخصصة قائمة ولكن ليس لها أي تأثير حتى ذلك الحين.",
+    "actions": {
+      "deactivate": "إيقاف التفعيل",
+      "activate": "تفعيل"
+    },
+    "deactivate": {
+      "title": "تعطيل الزائر؟",
+      "description": "سيفقدون الوصول إلى المستندات والتقارير والملفات المحمية حتى تقوم بإعادة تفعيلهم. ستظل المنح المخصصة موجودة ولكن لن يكون لها أي تأثير حتى ذلك الحين.",
+      "actions": {
+        "cancel": "إلغاء",
+        "confirm": "إيقاف التفعيل"
+      }
+    },
+    "messages": {
+      "updated": "تم تحديث الوصول",
+      "deactivated": "تم إلغاء تفعيل الزائر",
+      "activated": "تم تفعيل الزائر"
+    },
+    "errors": {
+      "update": "فشل في تحديث الوصول",
+      "deactivate": "فشل في إلغاء تنشيط الزائر",
+      "activate": "فشل في تفعيل الزائر"
+    }
+  },
+  "accessList": {
+    "empty": "لا زال لا يوجد زوار",
+    "emptyDescription": "أضف الأشخاص أو انتظر حتى يقوموا بتسجيل الدخول إلى بوابتك.",
+    "emptyFiltered": "لا يوجد زوار مطابقون",
+    "emptyFilteredDescription": "حاول اسمًا أو بريدًا إلكترونيًا مختلفًا، أو قم بمسح البحث.",
+    "search": {
+      "placeholder": "البحث بالاسم أو البريد الإلكتروني"
+    },
+    "sort": {
+      "label": "رتّب حسب",
+      "ariaLabel": "ترتيب حسب: {{value}}",
+      "requests": "حسب عدد الطلبات",
+      "joined": "حسب تاريخ الانضمام"
+    },
+    "actions": {
+      "showMore": "عرض المزيد",
+      "clearSearch": "مسح البحث"
+    }
+  },
+  "accessListItem": {
+    "notVisited": "لم يتم زيارته",
+    "visitedOn": "تمت زيارة {{date}}",
+    "deactivated": "معطل",
+    "requested_one": "مراجعة طلب {{count}}",
+    "requested_other": "مراجعة طلبات {{count}}",
+    "nda": {
+      "signed": "تم توقيع اتفاقية عدم الإفشاء",
+      "processing": "معالجة اتفاقية عدم الإفصاح",
+      "pending": "اتفاقية عدم الإفشاء قيد الانتظار",
+      "failed": "فشل اتفاقية عدم الإفصاح"
+    },
+    "actions": {
+      "open": "فتح الزائر"
+    }
+  },
+  "addVisitorDialog": {
+    "title": "أضف زائر",
+    "searchPlaceholder": "ابحث عن أشخاص أو اكتب بريدًا إلكترونيًا",
+    "addEmail": "أضف {{email}}",
+    "empty": "لا يوجد أشخاص مطابقون",
+    "actions": {
+      "open": "أضف زائر"
+    },
+    "messages": {
+      "created": "تم إضافة زائر"
+    },
+    "errors": {
+      "create": "فشل في إضافة الزائر"
+    }
+  },
+  "documentAccessList": {
+    "title": "وصولات الوثائق المقيدة",
+    "actions": {
+      "grant": "منحة",
+      "reject": "رفض",
+      "revoke": "إلغاء",
+      "rejectOrRevoke": "رفض أو إلغاء",
+      "cancel": "إلغاء",
+      "showMore": "عرض المزيد"
+    },
+    "selection": {
+      "count": "{{count}} مختار",
+      "clear": "مسح التحديد",
+      "selectAll": "اختر الكل",
+      "selectRow": "اختر {{title}}"
+    },
+    "grantConfirm": {
+      "title": "منح {{count}} مستندات؟",
+      "description": "سيتمكن هذا الزائر من قراءة المستندات المختارة.",
+      "confirm": "منحة"
+    },
+    "rejectOrRevokeConfirm": {
+      "title": "رفض أو إلغاء مستندات {{count}}؟",
+      "description": "سيتم إلغاء الوثائق الممنوحة. وسيتم رفض الطلبات المعلقة.",
+      "confirm": "رفض أو إلغاء"
+    },
+    "empty": "لا توجد مستندات متاحة",
+    "emptyFilter": "لا توجد مستندات بهذه الحالة",
+    "filter": {
+      "label": "الحالة",
+      "all": "جميع الحالات",
+      "none": "لا شيء"
+    }
+  },
+  "electronicSignature": {
+    "title": "اتفاقية عدم الإفصاح",
+    "certificateTitle": "شهادة إتمام",
+    "status": {
+      "signed": "موقع إلكترونيًا",
+      "processing": "التوقيع جارٍ",
+      "pending": "في انتظار التوقيع",
+      "failed": "التوقيع فشل"
+    },
+    "descriptions": {
+      "signedAt": "وقع هذا الزائر إلكترونيًا في {{date}}.",
+      "pending": "هذا الزائر لم يوقع بعد.",
+      "processing": "يتم معالجة هذا التوقيع حتى الآن.",
+      "failed": "تعذر إكمال هذا التوقيع.",
+      "completed": "قام هذا الزائر بالتوقيع إلكترونيًا."
+    },
+    "actions": {
+      "download": "تحميل",
+      "signedFile": "ملف موقع",
+      "certificate": "شهادة إتمام"
+    },
+    "activity": "نشاط"
+  },
+  "eventTypeLabel": {
+    "documentViewed": "تمت مشاهدة المستند",
+    "consentGiven": "موافق على التوقيع إلكترونيًا",
+    "fullNameTyped": "كتبوا اسمهم",
+    "signatureAccepted": "تم قبوله للتوقيع",
+    "signatureCompleted": "تم تسجيل التوقيع",
+    "sealComputed": "مستند مختوم",
+    "timestampRequested": "تم تطبيق الطابع الزمني",
+    "certificateGenerated": "تم إنشاء الشهادة",
+    "processingError": "فشل المعالجة"
+  },
+  "auditsPage": {
+    "title": "التدقيقات",
+    "description": "إدارة تقارير التدقيق وشهادات الامتثال"
+  },
+  "auditList": {
+    "columns": {
+      "displayed": "معروض",
+      "framework": "إطار عمل",
+      "name": "الاسم",
+      "validUntil": "صالح حتى",
+      "state": "دولة",
+      "visibility": "الرؤية"
+    },
+    "empty": "لا توجد تدقيقات متاحة"
+  },
+  "auditListItem": {
+    "messages": {
+      "visibilityUpdated": "تم تحديث إعدادات بوابة التدقيق بنجاح.",
+      "removed": "تمت إزالة التدقيق من البوابة."
+    },
+    "errors": {
+      "updateVisibility": "فشل في تحديث رؤية التدقيق",
+      "remove": "فشل في إزالة التدقيق من البوابة"
+    },
+    "actions": {
+      "toggle": "قم بتبديل {{title}} على بوابة الامتثال"
+    },
+    "unlink": {
+      "title": "هل إزالة التدقيق من البوابة؟",
+      "description": "سيتم إزالة طلبات وصول الزوار لهذا التقرير التدقيقي. لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "إزالة"
+    },
+    "noExpiry": "لا انتهاء للصلاحية",
+    "untitled": "بدون عنوان",
+    "noFrameworks": "بدون أطر",
+    "states": {
+      "to_book": "لحجز",
+      "audit_booked": "تم حجز التدقيق",
+      "not_started": "لم يبدأ",
+      "in_progress": "قيد التقدم",
+      "completed": "مكتمل",
+      "rejected": "مرفوض",
+      "outdated": "قديم"
+    }
+  },
+  "brandPage": {
+    "messages": {
+      "updated": "تم تحديث العلامة التجارية لمنصة الامتثال بنجاح"
+    },
+    "errors": {
+      "update": "فشل في تحديث العلامة التجارية لبوابة الامتثال",
+      "fileTooLarge": {
+        "title": "حجم الملف كبير جدًا",
+        "description": "حجم الملف كبير جدًا. يرجى رفع ملف أصغر من 5 ميغابايت."
+      }
+    },
+    "actions": {
+      "uploading": "جارٍ التحميل...",
+      "noLogo": "بدون شعار",
+      "uploadLogo": "رفع الشعار",
+      "uploadDarkLogo": "تحميل الشعار الداكن",
+      "changeLogo": "تغيير الشعار",
+      "removeLogo": "إزالة الشعار",
+      "changeDarkLogo": "تغيير الشعار الداكن",
+      "removeDarkLogo": "إزالة الشعار الداكن"
+    },
+    "logo": {
+      "label": "شعار",
+      "description": "سيتم عرض هذا الشعار على بوابة الامتثال العامة الخاصة بك.",
+      "alt": "شعار بوابة الامتثال",
+      "uploadDescription": "تحميل صورة الشعار (PNG، JPG، SVG، WEBP حتى 5 ميغابايت)"
+    },
+    "darkLogo": {
+      "label": "شعار الوضع الداكن",
+      "description": "سيتم استخدام هذا الشعار عند تفعيل الوضع المظلم.",
+      "alt": "شعار بوابة الامتثال الداكن",
+      "uploadDescription": "تحميل صورة الشعار الداكن (PNG، JPG، SVG، WEBP حتى 5 ميغابايت)"
+    },
+    "profile": {
+      "title": "معلومات عامة",
+      "description": "الوصف وتفاصيل الاتصال المعروضة للزوار.",
+      "errors": {
+        "update": "فشل في تحديث معلومات بوابة الامتثال"
+      },
+      "validation": {
+        "emailInvalid": "الرجاء إدخال عنوان بريد إلكتروني صالح"
+      },
+      "fields": {
+        "entityName": "اسم الكيان",
+        "entityNamePlaceholder": "أكمي",
+        "description": "الوصف",
+        "descriptionPlaceholder": "وصف مختصر للزوار",
+        "websiteUrl": "رابط الموقع",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "contact@example.com",
+        "address": "عنوان المقر الرئيسي",
+        "addressPlaceholder": "123 شارع الرئيسي، المدينة، البلد"
+      }
+    }
+  },
+  "commitmentDialog": {
+    "title": {
+      "create": "أضف الالتزام",
+      "edit": "تحرير الالتزام"
+    },
+    "validation": {
+      "iconRequired": "الأيقونة مطلوبة",
+      "titleRequired": "العنوان مطلوب",
+      "descriptionRequired": "الوصف مطلوب"
+    },
+    "messages": {
+      "created": "تم إنشاء الالتزام بنجاح",
+      "updated": "تم تحديث الالتزام بنجاح"
+    },
+    "errors": {
+      "create": "فشل في إنشاء الالتزام",
+      "update": "فشل في تحديث الالتزام"
+    },
+    "fields": {
+      "icon": "رمز",
+      "iconPlaceholder": "اختر أيقونة",
+      "eyebrow": "حاجب",
+      "eyebrowPlaceholder": "ملصق صغير للهجة فوق العنوان",
+      "title": "عنوان",
+      "titlePlaceholder": "عنوان الالتزام",
+      "description": "الوصف",
+      "descriptionPlaceholder": "دعم نص الجسم"
+    },
+    "actions": {
+      "add": "أضف الالتزام",
+      "update": "تحديث الالتزام"
+    },
+    "icons": {
+      "lock_key": "قفل ومفتاح",
+      "eye_slash": "شق العين",
+      "fingerprint": "بصمة الإصبع",
+      "shield_warning": "تحذير الدرع",
+      "shield_check": "فحص الدرع",
+      "siren": "صافرة الإنذار",
+      "key": "مفتاح",
+      "lock": "قفل",
+      "cloud": "سحابة",
+      "database": "قاعدة بيانات",
+      "globe": "كرة أرضية",
+      "eye": "عين",
+      "users": "المستخدمون",
+      "certificate": "شهادة",
+      "gavel": "مطرقة القاضي",
+      "heartbeat": "نبض القلب",
+      "bell": "جرس",
+      "bug": "حشرة",
+      "code": "كود",
+      "server": "خادم"
+    }
+  },
+  "commitmentGroupDialog": {
+    "title": {
+      "create": "إضافة مجموعة",
+      "edit": "تحرير المجموعة"
+    },
+    "validation": {
+      "titleRequired": "العنوان مطلوب",
+      "descriptionRequired": "الوصف مطلوب"
+    },
+    "messages": {
+      "created": "تم إنشاء المجموعة بنجاح",
+      "updated": "تم تحديث المجموعة بنجاح"
+    },
+    "errors": {
+      "create": "فشل في إنشاء المجموعة",
+      "update": "فشل في تحديث المجموعة"
+    },
+    "fields": {
+      "title": "عنوان",
+      "titlePlaceholder": "مثال: حماية البيانات",
+      "description": "الوصف",
+      "descriptionPlaceholder": "صف ما تغطيه هذه المجموعة من الالتزامات"
+    },
+    "actions": {
+      "add": "إضافة مجموعة",
+      "update": "تحديث المجموعة"
+    }
+  },
+  "commitmentGroupList": {
+    "title": "التزامات الأمن",
+    "description": "قم بتجميع بطاقات الالتزام في الأقسام المعروضة على بوابة الامتثال الخاصة بك",
+    "messages": {
+      "orderUpdated": "تم تحديث الطلب بنجاح"
+    },
+    "errors": {
+      "updateOrder": "فشل في تحديث الطلب"
+    },
+    "actions": {
+      "addGroup": "إضافة مجموعة"
+    },
+    "empty": "لا توجد مجموعات التزام بعد"
+  },
+  "commitmentGroupListItem": {
+    "messages": {
+      "deleted": "تم حذف المجموعة بنجاح",
+      "orderUpdated": "تم تحديث الطلب بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف المجموعة",
+      "updateOrder": "فشل في تحديث الطلب"
+    },
+    "delete": {
+      "title": "حذف المجموعة",
+      "description": "هل أنت متأكد أنك تريد حذف المجموعة \"{{title}}\"؟",
+      "warning": "سيتم أيضًا حذف جميع بطاقات الالتزام في هذه المجموعة. لا يمكن التراجع عن هذا الإجراء."
+    },
+    "columns": {
+      "icon": "رمز",
+      "title": "عنوان",
+      "description": "الوصف"
+    },
+    "actions": {
+      "deleting": "جارٍ الحذف...",
+      "delete": "حذف",
+      "addCommitment": "أضف الالتزام"
+    },
+    "empty": "لا توجد بطاقات التزام بعد"
+  },
+  "commitmentListItem": {
+    "messages": {
+      "deleted": "تم حذف الالتزام بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف الالتزام"
+    }
+  },
+  "documentsPage": {
+    "title": "وثائق",
+    "description": "إدارة السياسات والإجراءات ومستندات الامتثال"
+  },
+  "documentList": {
+    "columns": {
+      "displayed": "معروض",
+      "name": "الاسم",
+      "type": "نوع",
+      "alias": "اسم مستعار",
+      "visibility": "الرؤية"
+    },
+    "empty": "لا توجد مستندات منشورة نشطة متوفرة"
+  },
+  "documentListItem": {
+    "messages": {
+      "visibilityUpdated": "تم تحديث إعدادات بوابة المستندات بنجاح.",
+      "removed": "تمت إزالة المستند من البوابة."
+    },
+    "errors": {
+      "updateVisibility": "فشل في تحديث ظهور المستند",
+      "remove": "فشل في إزالة المستند من البوابة"
+    },
+    "actions": {
+      "toggle": "قم بتبديل {{title}} على بوابة الامتثال"
+    },
+    "unlink": {
+      "title": "هل تريد إزالة المستند من البوابة؟",
+      "description": "سيتم إزالة طلبات وصول الزائرين لهذا المستند. لا يمكن التراجع عن هذا.",
+      "confirm": "إزالة"
+    }
+  },
+  "thirdPartyListItem": {
+    "messages": {
+      "linked": "تمت إضافة المعالج الفرعي إلى البوابة.",
+      "removed": "تمت إزالة المعالج الفرعي من البوابة."
+    },
+    "errors": {
+      "link": "فشل في إضافة المعالج الفرعي إلى البوابة",
+      "remove": "فشل في إزالة المعالج الفرعي من البوابة"
+    },
+    "actions": {
+      "toggle": "قم بتبديل {{title}} على بوابة الامتثال"
+    }
+  },
+  "thirdPartyList": {
+    "columns": {
+      "displayed": "معروض",
+      "name": "الاسم",
+      "category": "الفئة"
+    },
+    "empty": "لا توجد معالجات فرعية متاحة"
+  },
+  "referenceList": {
+    "columns": {
+      "name": "الاسم",
+      "description": "الوصف"
+    },
+    "empty": "لا توجد مراجع متاحة",
+    "dragHint": "اسحب وأفلت المراجع لتغيير ترتيب عرضها"
+  },
+  "referencesPage": {
+    "title": "المراجع",
+    "description": "اعرض عملاءك وشركاءك على بوابة الامتثال الخاصة بك",
+    "actions": {
+      "add": "أضف مرجع"
+    }
+  },
+  "statusSection": {
+    "title": "الرؤية",
+    "description": "انشر بوابة الامتثال الخاصة بك واختر ما إذا كان بإمكان محركات البحث العثور عليها.",
+    "activation": {
+      "titleActive": "بوابة الامتثال نشطة",
+      "titleInactive": "بوابة الامتثال غير نشطة",
+      "description": "اجعل بوابة الامتثال الخاصة بك متاحة للجمهور لبناء ثقة العملاء"
+    },
+    "indexing": {
+      "title": "فهرسة محركات البحث",
+      "description": "السماح لمحركات البحث بفهرسة بوابة الامتثال الخاصة بك وجعلها قابلة للاكتشاف",
+      "disabledHint": "قم بتفعيل بوابة الامتثال الخاصة بك أولاً لتمكين فهرسة محركات البحث"
+    },
+    "rightsRequests": {
+      "title": "طلبات الخصوصية",
+      "description": "دع الزوار يقدمون طلبات الخصوصية المتعلقة ببياناتهم الشخصية على بوابة الامتثال الخاصة بك"
+    }
+  },
+  "domainsSection": {
+    "title": "النطاقات",
+    "description": "بوابة الامتثال الخاصة بك متاحة دائمًا على نطاقها الفرعي الافتراضي probopage.com. يمكنك أيضًا تقديمها على نطاق مخصص واحد تملكه."
+  },
+  "slackSection": {
+    "title": "إشعارات سلاك",
+    "connectionTitle": "قناة الإشعارات",
+    "notInstalledTitle": "بوت سلاك غير مثبت",
+    "description": "اختر المكان الذي تُرسل إليه طلبات الوصول لهذا البوابة الخاصة بالامتثال.",
+    "notInstalled": "قم بتثبيت تطبيق Probo Slack من إعدادات المؤسسة قبل اختيار قناة.",
+    "channel": {
+      "label": "قناة",
+      "placeholder": "اختر القناة",
+      "loadMore": "عرض المزيد",
+      "loadError": "تعذر تحميل قنوات Slack.",
+      "emptyTitle": "أنتظر منك دعوة @Probo إلى قناة",
+      "emptyDescription": "@Probo لم يُدعَ لأي قناة بعد."
+    },
+    "actions": {
+      "clear": "واضح",
+      "install": "تثبيت",
+      "refresh": "تحديث"
+    }
+  },
+  "externalUrls": {
+    "title": "روابط مخصصة",
+    "description": "أضف عناوين URL خارجية للعرض على بوابة الامتثال الخاصة بك",
+    "validation": {
+      "nameRequired": "الاسم مطلوب",
+      "urlInvalid": "يرجى إدخال رابط صالح"
+    },
+    "messages": {
+      "created": "تم إضافة الرابط بنجاح.",
+      "updated": "تم تحديث الرابط بنجاح.",
+      "deleted": "تم إزالة الرابط.",
+      "orderUpdated": "تم تحديث الطلب."
+    },
+    "errors": {
+      "create": "فشل في إضافة الرابط.",
+      "update": "فشل في تحديث الرابط.",
+      "delete": "فشل في إزالة الرابط.",
+      "orderUpdate": "فشل في تحديث الطلب."
+    },
+    "dialog": {
+      "titleCreate": "أضف رابط",
+      "titleEdit": "تحرير الرابط"
+    },
+    "fields": {
+      "url": "عنوان الموقع",
+      "urlPlaceholder": "https://example.com",
+      "name": "الاسم",
+      "namePlaceholder": "على سبيل المثال، تويتر أو لينكدإن"
+    },
+    "actions": {
+      "add": "أضف رابط",
+      "save": "حفظ التغييرات",
+      "open": "افتح الرابط",
+      "remove": "إزالة الرابط"
+    },
+    "dragHint": "اسحب وأفلت لتغيير الترتيب المعروض"
+  },
+  "sendUpdateDialog": {
+    "title": "أرسل التحديث للمشتركين",
+    "description": "سيتم إرسال هذا التحديث إلى جميع المشتركين الحاليين في قائمة البريد هذه. لا يمكن التراجع عن هذا الإجراء.",
+    "messages": {
+      "enqueued": "تم وضع التحديث في قائمة التسليم"
+    },
+    "errors": {
+      "enqueue": "فشل في وضع التحديث في الطابور للتسليم"
+    },
+    "actions": {
+      "send": "إرسال"
+    }
+  },
+  "newSubscriberDialog": {
+    "title": "أضف مشترك",
+    "description": "أضف شخصًا لتلقي تحديثات الأمان والامتثال",
+    "validation": {
+      "fullNameRequired": "الاسم الكامل مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "emailInvalid": "الرجاء إدخال عنوان بريد إلكتروني صالح"
+    },
+    "messages": {
+      "created": "تم إضافة المشترك بنجاح"
+    },
+    "errors": {
+      "create": "فشل في إضافة المشترك"
+    },
+    "fields": {
+      "fullName": "الاسم الكامل",
+      "fullNamePlaceholder": "جون دو",
+      "email": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "john@example.com",
+      "skipConfirmation": "تخطي رسالة تأكيد البريد الإلكتروني"
+    },
+    "consentNotice": "من خلال تحديد هذا المربع، أنت تُقر بأنك قد حصلت على موافقة مسبقة قابلة للتحقق من هذا الشخص لتلقي هذه الاتصالات، بما يتوافق مع لوائح حماية البيانات المعمول بها (على سبيل المثال، اللائحة العامة لحماية البيانات GDPR و CAN-SPAM). أنت تتحمل المسؤولية الكاملة لإثبات وجود الموافقة إذا طُلب منك ذلك.",
+    "actions": {
+      "create": "أضف مشترك"
+    }
+  },
+  "updateFormDialog": {
+    "title": {
+      "view": "تحديث العرض",
+      "edit": "تحرير التحديث",
+      "create": "أضف تحديث"
+    },
+    "validation": {
+      "titleRequired": "العنوان مطلوب",
+      "bodyRequired": "الجسم مطلوب"
+    },
+    "messages": {
+      "created": "تم إنشاء التحديث بنجاح",
+      "updated": "تم حفظ التحديث بنجاح"
+    },
+    "errors": {
+      "create": "فشل في إنشاء التحديث",
+      "update": "فشل في حفظ التحديث"
+    },
+    "confidentialityNotice": "لا تقم بتضمين معلومات سرية أو حساسة في هذا التحديث. يجب وضع أي محتوى يتطلب الحماية خلف مستنداتك المحمية باتفاقية عدم الإفشاء الخاصة بك بدلاً من ذلك.",
+    "fields": {
+      "title": "عنوان",
+      "body": "الجسم"
+    },
+    "sentNotice": "تم إرسال هذا التحديث ولا يمكن تعديله بعد الآن.",
+    "actions": {
+      "save": "حفظ",
+      "create": "إنشاء"
+    }
+  },
+  "updatesList": {
+    "messages": {
+      "deleted": "تم حذف التحديث بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف التحديث"
+    },
+    "empty": "لا توجد تحديثات بعد",
+    "columns": {
+      "title": "عنوان",
+      "status": "الحالة",
+      "created": "تم الإنشاء"
+    },
+    "status": {
+      "sent": "تم الإرسال",
+      "enqueued": "قيد الانتظار",
+      "processing": "جارٍ المعالجة…",
+      "draft": "مسودة"
+    },
+    "actions": {
+      "send": "إرسال",
+      "edit": "تحرير التحديث",
+      "view": "تحديث العرض",
+      "delete": "حذف التحديث",
+      "showMore": "عرض المزيد"
+    }
+  },
+  "mailingList": {
+    "messages": {
+      "deleted": "تم إزالة المشترك بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف المشترك"
+    },
+    "empty": "لا يوجد مشتركون في القائمة البريدية حتى الآن",
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "status": "الحالة",
+      "subscribedOn": "مشترك منذ"
+    },
+    "status": {
+      "confirmed": "تم التأكيد",
+      "pending": "قيد الانتظار"
+    },
+    "actions": {
+      "delete": "حذف المشترك",
+      "showMore": "عرض المزيد"
+    }
+  },
+  "newFileDialog": {
+    "title": "أضف ملف",
+    "uploadDescription": "رفع الملف (الحد الأقصى 10 ميغابايت)",
+    "selectedFile": "الملف المحدد: {{name}}",
+    "validation": {
+      "nameRequired": "الاسم مطلوب",
+      "categoryRequired": "الفئة مطلوبة",
+      "fileTypeNotAllowed": "نوع الملف غير مسموح به"
+    },
+    "messages": {
+      "created": "تم تحميل الملف بنجاح"
+    },
+    "errors": {
+      "create": "فشل تحميل الملف"
+    },
+    "fields": {
+      "name": "الاسم",
+      "category": "الفئة",
+      "visibility": "الرؤية"
+    },
+    "actions": {
+      "add": "أضف ملف"
+    }
+  },
+  "editFileDialog": {
+    "title": "تحرير الملف",
+    "validation": {
+      "nameRequired": "الاسم مطلوب",
+      "categoryRequired": "الفئة مطلوبة"
+    },
+    "messages": {
+      "updated": "تم تحديث الملف بنجاح"
+    },
+    "errors": {
+      "update": "فشل في تحديث الملف"
+    },
+    "fields": {
+      "name": "الاسم",
+      "category": "الفئة"
+    },
+    "actions": {
+      "save": "حفظ"
+    }
+  },
+  "deleteFileDialog": {
+    "title": "حذف الملف",
+    "description": "سيتم إزالة طلبات وصول الزائرين لهذا الملف. لا يمكن التراجع عن ذلك.",
+    "messages": {
+      "deleted": "تم حذف الملف بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف الملف"
+    },
+    "actions": {
+      "delete": "حذف"
+    }
+  },
+  "fileListItem": {
+    "messages": {
+      "updated": "تم تحديث الملف بنجاح"
+    },
+    "errors": {
+      "update": "فشل في تحديث الملف"
+    },
+    "actions": {
+      "download": "تحميل",
+      "edit": "تحرير",
+      "delete": "حذف"
+    }
+  },
+  "fileList": {
+    "columns": {
+      "name": "الاسم",
+      "category": "الفئة",
+      "uploadDate": "تاريخ التحميل",
+      "alias": "اسم مستعار",
+      "visibility": "الرؤية"
+    },
+    "empty": "لا توجد ملفات متوفرة"
+  },
+  "filesPage": {
+    "title": "ملفات",
+    "description": "تحميل وإدارة الملفات لمنصة الامتثال الخاصة بك",
+    "actions": {
+      "add": "أضف ملف"
+    }
+  },
+  "customDomainForm": {
+    "title": "أضف نطاقًا مخصصًا",
+    "messages": {
+      "created": "تمت إضافة النطاق بنجاح. قم بتكوين سجلات DNS للتحقق من النطاق وتفعيله."
+    },
+    "errors": {
+      "create": "فشل في إضافة النطاق"
+    },
+    "fields": {
+      "domain": "نطاق",
+      "domainPlaceholder": "compliance.example.com",
+      "domainInvalid": "يرجى إدخال نطاق صالح (على سبيل المثال، compliance.example.com)"
+    },
+    "examples": "أمثلة: compliance.example.com، trust.example.com",
+    "actions": {
+      "add": "إضافة نطاق"
+    }
+  },
+  "deleteDomainDialog": {
+    "title": "حذف النطاق المخصص",
+    "description": "سيؤدي هذا إلى حذف النطاق المخصص {{domain}} وجميع إعداداته بشكل دائم.",
+    "warning": "لا يمكن التراجع عن هذا الإجراء.",
+    "confirmationLabel": "لتأكيد الحذف، اكتب \"{{domain}}\" أدناه:",
+    "confirmationMismatch": "القيمة لا تطابق النطاق.",
+    "messages": {
+      "deleted": "تم حذف النطاق بنجاح"
+    },
+    "errors": {
+      "delete": "فشل في حذف النطاق"
+    },
+    "actions": {
+      "delete": "حذف المجال",
+      "cancel": "إلغاء"
+    }
+  },
+  "domainCard": {
+    "managed": "مدار",
+    "active": {
+      "title": "النطاق نشط",
+      "description": "تم التحقق من نطاقك المخصص وشهادة SSL نشطة",
+      "dns": "اترك هذه السجلات في مكانها. فهي تبقي هذا النطاق موجهًا إلى هنا."
+    },
+    "pending": {
+      "title": "في انتظار DNS",
+      "description": "بعد إضافة سجلات DNS، ستتم عملية التحقق تلقائيًا. قد يستغرق هذا بضع دقائق للانتشار.",
+      "dns": "أضف هذه السجلات لدى مزود DNS الخاص بك لإكمال التحقق."
+    },
+    "provisioning": {
+      "title": "جارٍ إصدار الشهادة",
+      "description": "نحن نقوم بتوفير شهادة SSL لهذا النطاق.",
+      "dns": "يجب أن تظل هذه السجلات في مكانها طالما أن هذا النطاق قيد الاستخدام."
+    },
+    "renewing": {
+      "title": "الشهادة قيد التجديد",
+      "description": "يتم إصدار شهادة SSL جديدة. الشهادة الحالية تبقى نشطة حتى اكتمال العملية.",
+      "dns": "يجب أن تبقى هذه السجلات في مكانها أثناء التجديد وبعد اكتماله."
+    },
+    "expired": {
+      "title": "انتهت صلاحية الشهادة",
+      "description": "شهادة SSL لهذا النطاق قد انتهت صلاحيتها وتحتاج إلى إعادة إصدار.",
+      "dns": "يجب أن تشير هذه السجلات إلى هنا حتى نتمكن من إعادة إصدار الشهادة."
+    },
+    "failed": {
+      "title": "فشل توفير الشهادة",
+      "description": "لم نتمكن من إصدار شهادة SSL لهذا النطاق.",
+      "dns": "تحقق من أن هذه السجلات تتطابق مع موفر DNS الخاص بك. عدم التطابق هو سبب شائع للفشل."
+    },
+    "error": {
+      "title": "خطأ في التوفیر"
+    },
+    "sslExpires": "تنتهي صلاحية SSL {{date}}",
+    "dns": {
+      "name": "الاسم",
+      "value": "قيمة",
+      "ttl": "المدة الزمنية للحياة: {{ttl}}",
+      "copy": "نسخ",
+      "purposePointToServers": "وجه النطاق إلى خوادم Probo"
+    },
+    "messages": {
+      "copied": "تم النسخ",
+      "valueCopied": "تم نسخ القيمة إلى الحافظة",
+      "copyFailed": "فشل النسخ",
+      "valueCopyFailed": "لم يتمكن من نسخ القيمة إلى الحافظة"
+    },
+    "actions": {
+      "delete": "حذف"
+    }
+  },
+  "frameworkList": {
+    "title": "أطر الامتثال",
+    "description": "اختر الأطر التي تريد عرضها على بوابة الامتثال العامة الخاصة بك.",
+    "empty": "لا توجد أطر عمل متاحة",
+    "messages": {
+      "visibilityUpdated": "تم تحديث رؤية الإطار بنجاح."
+    },
+    "errors": {
+      "visibilityUpdate": "فشل في تحديث ظهور الإطار"
+    }
+  },
+  "ndaSection": {
+    "title": "اتفاقية عدم الإفصاح",
+    "empty": "لم يتم تحميل ملف اتفاقية عدم الإفشاء",
+    "description": "يجب على الزوار توقيع هذه الاتفاقية قبل أن يتمكنوا من قراءة المستندات الخاصة.",
+    "dropHint": "أسقط ملف PDF هنا",
+    "dropReplace": "أفلت ملف PDF للاستبدال",
+    "dropActive": "إسقاط PDF",
+    "actions": {
+      "download": "تحميل",
+      "upload": "رفع اتفاقية عدم الإفشاء",
+      "replace": "استبدل",
+      "delete": "حذف",
+      "uploading": "جارٍ التحميل..."
+    },
+    "delete": {
+      "title": "حذف اتفاقية عدم الإفشاء",
+      "description": "هل أنت متأكد أنك تريد حذف ملف NDA؟ هذا الإجراء لا يمكن التراجع عنه.",
+      "actions": {
+        "delete": "حذف",
+        "cancel": "إلغاء"
+      }
+    },
+    "errors": {
+      "invalidFileType": {
+        "title": "نوع الملف غير مدعوم",
+        "description": "يرجى رفع ملف PDF."
+      },
+      "fileTooLarge": {
+        "title": "حجم الملف كبير جدًا",
+        "description": "يرجى تحميل ملف أصغر من 10 ميغابايت."
+      },
+      "tooManyFiles": {
+        "title": "عدد كبير جدًا من الملفات",
+        "description": "يرجى تحميل ملف PDF واحد في كل مرة."
+      }
+    }
+  },
+  "subprocessorsPage": {
+    "title": "المعالجات الفرعية",
+    "description": "إدارة تقييمات المعالجات الفرعية ومعلومات مخاطر الأطراف الثالثة"
+  },
+  "updatesPage": {
+    "title": "التحديثات",
+    "description": "إرسال تحديثات الأمن والامتثال إلى المشتركين.",
+    "errors": {
+      "update": "فشل في تحديث قائمة البريد"
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "description": "قم بتكوين كيفية تصرف قائمة البريد الخاصة بك",
+      "replyTo": "البريد الإلكتروني للرد",
+      "replyToPlaceholder": "security@example.com"
+    },
+    "tabs": {
+      "updates": "التحديثات",
+      "subscribers": "المشتركين"
+    },
+    "actions": {
+      "addUpdate": "أضف تحديث",
+      "addSubscriber": "أضف مشترك"
+    }
+  },
+  "documentsLayout": {
+    "tabs": {
+      "audits": "التدقيقات",
+      "documents": "وثائق",
+      "files": "ملفات"
+    }
+  },
+  "landingLayout": {
+    "tabs": {
+      "branding": "العلامة التجارية",
+      "content": "محتوى"
+    }
+  }
+}

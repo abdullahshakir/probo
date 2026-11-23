@@ -43,6 +43,9 @@
   "consoleFooter": {
     "proboConsole": "Console Probo"
   },
+  "locale": {
+    "label": "Langue"
+  },
   "userMenu": {
     "notifications": "Notifications",
     "oauthTokens": "Jetons OAuth",

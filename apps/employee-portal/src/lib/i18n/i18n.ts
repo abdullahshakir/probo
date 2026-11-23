@@ -22,12 +22,23 @@ import { createInstance } from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import { DEFAULT_NAMESPACE, globBackend } from "./backend";
-import { resolveLanguage, SUPPORTED_LANGUAGES } from "./resolveLanguage";
+import {
+  isRtlLanguage,
+  resolveLanguage,
+  SUPPORTED_LANGUAGES,
+} from "./resolveLanguage";
 
 // Build a dedicated instance rather than mutating i18next's global singleton.
 // Initializing it through initReactI18next still registers it as the instance
 // react-i18next's hooks read from, so no I18nextProvider is required.
 const i18n = createInstance();
+
+function syncDocumentLocale(language: string) {
+  document.documentElement.lang = language;
+  document.documentElement.dir = isRtlLanguage(language) ? "rtl" : "ltr";
+}
+
+i18n.on("languageChanged", syncDocumentLocale);
 
 void i18n
   .use(globBackend)
@@ -42,6 +53,9 @@ void i18n
     ns: [DEFAULT_NAMESPACE],
     interpolation: { escapeValue: false },
     react: { useSuspense: true },
+  })
+  .then(() => {
+    syncDocumentLocale(i18n.language);
   });
 
 export { i18n };

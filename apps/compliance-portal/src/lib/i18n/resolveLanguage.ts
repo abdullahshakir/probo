@@ -20,6 +20,7 @@
 
 export const SUPPORTED_LANGUAGES = [
   "en-US",
+  "ar-SA",
   "fr-FR",
   "de-DE",
   "es-ES",
@@ -37,10 +38,15 @@ export const SUPPORTED_LANGUAGES = [
 
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
+export function isRtlLanguage(language: string): boolean {
+  return language === "ar-SA" || language.toLowerCase().startsWith("ar");
+}
+
 // Maps a two-letter language prefix (lowercased) to its canonical supported
 // tag, e.g. any "de*" browser tag resolves to "de-DE".
 const PREFIX_TO_LANGUAGE: Record<string, SupportedLanguage> = {
   en: "en-US",
+  ar: "ar-SA",
   fr: "fr-FR",
   de: "de-DE",
   es: "es-ES",

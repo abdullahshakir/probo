@@ -1,0 +1,79 @@
+{
+  "workspaceSettingsPage": {
+    "title": "مساحة العمل"
+  },
+  "identity": {
+    "title": "هوية",
+    "description": "تُستخدم هذه التفاصيل في وحدة التحكم، والمستندات، والتصديرات.",
+    "fields": {
+      "logo": "شعار",
+      "logoPlaceholder": "أسقط أو انقر",
+      "horizontalLogo": "شعار أفقي",
+      "horizontalLogoPlaceholder": "أسقط أو انقر",
+      "acceptedFiles": "JPEG، PNG، SVG، أو WebP. الحد الأقصى 5 ميغابايت.",
+      "name": "الاسم",
+      "nameDescription": "اسم التشغيل المعروض في وحدة التحكم.",
+      "legalName": "الاسم القانوني",
+      "legalNameDescription": "الاسم القانوني المسجل. يستخدم المهارات هذا في الوثائق القانونية عند تحديده."
+    },
+    "actions": {
+      "save": "حفظ",
+      "clearHorizontalLogo": "إزالة الشعار الأفقي"
+    },
+    "messages": {
+      "updated": "تم تحديث مساحة العمل",
+      "horizontalLogoDeleted": "تم إزالة الشعار الأفقي"
+    },
+    "errors": {
+      "update": "فشل في تحديث مساحة العمل",
+      "deleteHorizontalLogo": "فشل في إزالة الشعار الأفقي",
+      "nameRequired": "أدخل اسماً",
+      "invalidFileType": {
+        "title": "نوع الملف غير مدعوم",
+        "description": "قم بتحميل صورة بصيغة JPEG أو PNG أو SVG أو WebP."
+      },
+      "fileTooLarge": {
+        "title": "الملف كبير جدًا",
+        "description": "قم بتحميل صورة أقل من 5 ميجابايت."
+      },
+      "tooManyFiles": {
+        "title": "عدد كبير جدًا من الملفات",
+        "description": "قم بتحميل صورة واحدة في كل مرة."
+      }
+    },
+    "deleteHorizontalLogo": {
+      "title": "إزالة الشعار الأفقي",
+      "description": "هل تريد إزالة الشعار الأفقي من مساحة العمل هذه؟",
+      "actions": {
+        "cancel": "إلغاء",
+        "confirm": "إزالة"
+      }
+    }
+  },
+  "dangerZone": {
+    "title": "منطقة الخطر",
+    "delete": {
+      "title": "حذف مساحة العمل",
+      "description": "حذف هذا مساحة العمل وجميع بياناتها بشكل دائم.",
+      "warning": "لا يمكن التراجع عن هذا.",
+      "action": "حذف مساحة العمل"
+    }
+  },
+  "deleteWorkspaceDialog": {
+    "title": "حذف مساحة العمل",
+    "description": "سيؤدي هذا إلى حذف {{organizationName}} وجميع بياناته بشكل دائم.",
+    "warning": "لا يمكن التراجع عن هذا.",
+    "confirmationLabel": "اكتب \"{{organizationName}}\" للتأكيد:",
+    "confirmationMismatch": "الاسم لا يتطابق.",
+    "actions": {
+      "cancel": "إلغاء",
+      "delete": "حذف مساحة العمل"
+    },
+    "messages": {
+      "deleted": "تم حذف مساحة العمل"
+    },
+    "errors": {
+      "delete": "فشل في حذف مساحة العمل"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "bind": {
+    "title": "ربط سلاك بـ بروبو",
+    "description": "اربط هذا الحساب في Slack بهويتك على Probo حتى يتمكن Probot من مساعدتك.",
+    "breadcrumb": "اتصل",
+    "fields": {
+      "tenant": "مساحة العمل",
+      "account": "حساب"
+    },
+    "actions": {
+      "confirm": "ربط حساب سلاك"
+    },
+    "messages": {
+      "linked": "تم ربط حسابك في سلاك بـ Probo الآن."
+    },
+    "missingToken": {
+      "title": "لا يوجد رابط للتأكيد",
+      "description": "قم بتشغيل /probot login في Slack للحصول على رابط تأكيد خاص."
+    },
+    "errors": {
+      "linkFailed": "فشل الربط",
+      "invalidOrExpiredTokenTitle": "انتهت صلاحية هذا الرابط",
+      "invalidOrExpiredToken": "اطلب من البوت رابط تأكيد خاص جديد."
+    }
+  },
+  "list": {
+    "title": "سلاك",
+    "breadcrumb": "سلاك",
+    "description": "اربط حساب Slack الخاص بك حتى يتمكن Probot من مساعدتك في هذه المؤسسة.",
+    "connectedDescription": "{{account}} · {{workspace}}",
+    "providers": {
+      "slack": "سلاك"
+    },
+    "columns": {
+      "account": "حساب",
+      "action": "عمل"
+    },
+    "actions": {
+      "unlink": "إلغاء الربط",
+      "cancel": "إلغاء"
+    },
+    "empty": {
+      "title": "لا يوجد حساب Slack مربوط",
+      "description": "قم بتشغيل <cmd>/probot login</cmd> في Slack للحصول على رابط تأكيد خاص."
+    },
+    "messages": {
+      "unlinked": "تم فصل حساب سلاك."
+    },
+    "errors": {
+      "unlinkFailed": "تعذر فصل هذا الحساب."
+    },
+    "confirmations": {
+      "unlinkTitle": "فصل حساب Slack",
+      "unlink": "فصل هذا الحساب على Slack؟ لن يتمكن Probot من مساعدتك حتى تقوم بربطه مرة أخرى."
+    }
+  }
+}

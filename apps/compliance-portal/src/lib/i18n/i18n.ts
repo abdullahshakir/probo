@@ -26,7 +26,11 @@ import {
   isUrlLocale,
   urlLocaleToLanguage,
 } from "./locale";
-import { resolveLanguage, SUPPORTED_LANGUAGES } from "./resolveLanguage";
+import {
+  isRtlLanguage,
+  resolveLanguage,
+  SUPPORTED_LANGUAGES,
+} from "./resolveLanguage";
 
 function initialLanguage() {
   const first = window.location.pathname.split("/").filter(Boolean)[0];
@@ -36,10 +40,18 @@ function initialLanguage() {
   return resolveLanguage();
 }
 
+function syncDocumentLocale(language: string) {
+  // Prefer the short URL tag already set by LocaleLayout for `lang`; only
+  // ensure `dir` tracks RTL languages here when i18next changes.
+  document.documentElement.dir = isRtlLanguage(language) ? "rtl" : "ltr";
+}
+
 // Build a dedicated instance rather than mutating i18next's global singleton.
 // Initializing it through initReactI18next still registers it as the instance
 // react-i18next's hooks read from, so no I18nextProvider is required.
 const i18n = createInstance();
+
+i18n.on("languageChanged", syncDocumentLocale);
 
 void i18n
   .use(globBackend)
@@ -54,6 +66,9 @@ void i18n
     ns: [DEFAULT_NAMESPACE],
     interpolation: { escapeValue: false },
     react: { useSuspense: true },
+  })
+  .then(() => {
+    syncDocumentLocale(i18n.language);
   });
 
 export { i18n };

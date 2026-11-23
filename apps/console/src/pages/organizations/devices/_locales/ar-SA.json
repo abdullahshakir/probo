@@ -1,0 +1,154 @@
+{
+  "devices": {
+    "title": "أجهزة",
+    "detailsTitle": "جهاز",
+    "description": "إدارة أجهزة الكمبيوتر المسجلة مع وكيل وضعية Probo.",
+    "empty": "لا توجد أجهزة مسجلة بعد",
+    "actions": {
+      "add": "إضافة جهاز",
+      "new": "جهاز جديد",
+      "reassign": "إعادة تعيين",
+      "revoke": "إلغاء",
+      "delete": "حذف",
+      "downloadAsEvidence": "تحميل كدليل",
+      "downloadAsEvidenceCount": "تحميل كدليل ({{count}})",
+      "clearSelection": "مسح التحديد",
+      "selectAll": "اختر الكل",
+      "menu": "إجراءات الجهاز",
+      "selectDevice": "اختر {{owner}}"
+    },
+    "fields": {
+      "organization": "منظمة",
+      "owner": "مالك",
+      "postures": "وضعيات",
+      "state": "دولة",
+      "platform": "منصة",
+      "osVersion": "إصدار نظام التشغيل",
+      "hardwareUuid": "معرّف UUID للأجهزة",
+      "serialNumber": "الرقم التسلسلي",
+      "agentVersion": "إصدار الوكيل",
+      "enrolledAt": "مسجل في",
+      "lastSeen": "آخر ظهور"
+    },
+    "views": {
+      "allRegistered": "جميع الأجهزة",
+      "warningsOnly": "تحذيرات فقط",
+      "ariaLabel": "عرض قائمة الأجهزة"
+    },
+    "filters": {
+      "allStates": "جميع الدول",
+      "pending": "قيد الانتظار",
+      "active": "نشط",
+      "revoked": "ملغى",
+      "allAgentVersions": "جميع إصدارات الوكيل",
+      "allPlatforms": "جميع المنصات",
+      "selectedCount": "{{count}} مختار",
+      "search": "البحث حسب المالك",
+      "empty": "لا توجد أجهزة تطابق هذه الفلاتر"
+    },
+    "platforms": {
+      "darwin": "ماك أو إس",
+      "linux": "لينكس",
+      "freebsd": "فري بي إس دي",
+      "windows": "ويندوز"
+    },
+    "values": {
+      "pending": "(قيد الانتظار)",
+      "never": "أبدًا",
+      "unassigned": "غير معين"
+    },
+    "messages": {
+      "ownerUpdated": "تم تحديث مالك الجهاز",
+      "revoked": "تم إلغاء الجهاز",
+      "revokedMany": "تم إبطال أجهزة {{count}}",
+      "revokedPartial_one": "{{count}} من {{total}} أجهزة تم إلغاؤها",
+      "revokedPartial_other": "{{count}} من {{total}} أجهزة تم إلغاؤها",
+      "deleted": "تم حذف الجهاز",
+      "deletedMany": "تم حذف الأجهزة {{count}}",
+      "deletedPartial_one": "{{count}} من {{total}} أجهزة تم حذفها",
+      "deletedPartial_other": "{{count}} من {{total}} أجهزة تم حذفها"
+    },
+    "errors": {
+      "create": "فشل في إنشاء الجهاز",
+      "reassign": "فشل في إعادة تعيين الجهاز",
+      "revoke": "فشل في إلغاء جهاز",
+      "delete": "فشل في حذف الجهاز",
+      "downloadEvidence": "فشل تحميل الدليل"
+    },
+    "confirmations": {
+      "revoke": "هل تريد إلغاء جهاز \"{{owner}}\"؟",
+      "revokeMany": "هل تريد إلغاء صلاحية {{count}} أجهزة؟",
+      "revokeWarning": "سيتوقف الوكيل على الجهاز عن الإبلاغ ويجب إعادة تسجيله.",
+      "revokeWarningMany": "سيتوقف الوكلاء عن تقديم التقارير ويجب إعادة تسجيلهم.",
+      "delete": "حذف الجهاز \"{{owner}}\"؟",
+      "deleteMany": "حذف {{count}} أجهزة؟",
+      "deleteWarning": "هذا يزيله نهائيًا من المخزون.",
+      "deleteWarningMany": "هذا يزيلهم نهائيًا من المخزون."
+    },
+    "postures": {
+      "currentTitle": "الوضعيات الحالية",
+      "empty": "لم تُسجَّل أي فحوصات للوضعية",
+      "checks_one": "{{count}} تحقق",
+      "checks_other": "{{count}} يتحقق",
+      "warnings_one": "{{count}} تحذير",
+      "warnings_other": "{{count}} تحذيرات",
+      "showWarnings_one": "عرض تحذير وضعية {{count}}",
+      "showWarnings_other": "عرض تحذيرات وضعية {{count}}",
+      "unknownHint": "لم يتمكن الوكيل من التقاط أو تفسير هذا الشيك، لذا قام بالإبلاغ عنه كمجهول.",
+      "values": {
+        "on": "تشغيل",
+        "off": "إيقاف",
+        "immediate": "فوري",
+        "seconds": "{{seconds}}s",
+        "minPasswordLength": "الحد الأدنى للطول {{length}}",
+        "configured": "مُكوَّن",
+        "none": "لا شيء",
+        "unknown": "مجهول"
+      },
+      "checks": {
+        "diskEncryption": "تشفير القرص",
+        "screenLock": "قفل الشاشة",
+        "firewallEnabled": "جدار الحماية مفعل",
+        "timeSync": "مزامنة الوقت",
+        "osVersion": "إصدار نظام التشغيل",
+        "autoUpdate": "التحديث التلقائي",
+        "passwordPolicy": "سياسة كلمة المرور",
+        "remoteLogin": "تسجيل الدخول عن بُعد",
+        "malwareProtection": "حماية من البرمجيات الخبيثة"
+      }
+    },
+    "history": {
+      "title": "تاريخ التقرير",
+      "empty": "لا توجد تقارير عن الوضعية بعد",
+      "checkCount_one": "{{count}} تم الإبلاغ عن الفحص",
+      "checkCount_other": "تم التحقق من {{count}} التقارير",
+      "columns": {
+        "time": "الوقت",
+        "checks": "شيكات",
+        "correlationId": "معرّف الارتباط"
+      },
+      "actions": {
+        "copyCorrelationId": "نسخ معرف الارتباط",
+        "correlationIdCopied": "تم نسخ معرف الترابط"
+      },
+      "errors": {
+        "copyCorrelationId": "فشل نسخ معرف الارتباط"
+      }
+    },
+    "selected_one": "تم اختيار جهاز {{count}}",
+    "selected_other": "تم تحديد أجهزة {{count}}"
+  },
+  "deviceEnrollment": {
+    "token": {
+      "title": "تم إنشاء رمز التسجيل",
+      "label": "رمز التسجيل",
+      "description": "شارك رمز التسجيل هذا فقط مع مالك الجهاز من خلال قناة آمنة. يمكن استخدامه مرة واحدة وينتهي بعد سبعة أيام."
+    },
+    "messages": {
+      "created": "تم إنشاء الجهاز. انسخ رمز التسجيل الآن — لن يتم عرضه مرة أخرى."
+    },
+    "errors": {
+      "copyToClipboard": "فشل النسخ إلى الحافظة"
+    }
+  }
+}

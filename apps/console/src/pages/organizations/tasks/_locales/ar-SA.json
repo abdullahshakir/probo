@@ -1,0 +1,311 @@
+{
+  "detailsPage": {
+    "notFound": "المهمة غير موجودة",
+    "back": "المهام",
+    "empty": "—",
+    "none": "لا شيء",
+    "linkInternalControls": "رابط للرقابة الداخلية",
+    "searchInternalControls": "البحث عن الضوابط الداخلية",
+    "noInternalControls": "لا توجد ضوابط داخلية",
+    "findings": "النتائج",
+    "noFindings": "لا توجد نتائج مرتبطة",
+    "searchFindings": "نتائج البحث",
+    "noFindingsFound": "لم يتم العثور على أي نتائج",
+    "findingsLoadError": "تعذر تحميل النتائج",
+    "internalControlsLoadError": "تعذر تحميل عناصر التحكم الداخلية",
+    "noDescription": "لا وصف",
+    "unassigned": "غير معين",
+    "fields": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "descriptionPlaceholder": "اكتب وصفاً…",
+      "state": "دولة",
+      "priority": "أولوية",
+      "assignedTo": "مُعيّن لـ",
+      "linear": "خطي",
+      "asana": "أسانا",
+      "internalControls": "الضوابط الداخلية",
+      "timeEstimate": "تقدير الوقت",
+      "timeEstimateUnit": "وحدة تقدير الوقت",
+      "deadline": "الموعد النهائي",
+      "recurrence": "يكرر",
+      "recurrenceUnit": "وحدة التكرار",
+      "createdAt": "تم الإنشاء",
+      "updatedAt": "مُحدث"
+    },
+    "duration": {
+      "S": "ثوانٍ",
+      "M": "دقائق",
+      "H": "ساعات",
+      "D": "أيام",
+      "W": "أسابيع",
+      "MO": "شهور",
+      "Y": "سنوات"
+    },
+    "states": {
+      "backlog": "الموجودات المتأخرة",
+      "todo": "للقيام به",
+      "inProgress": "قيد التقدم",
+      "done": "تم",
+      "canceled": "ملغى",
+      "duplicate": "مكرر"
+    },
+    "priorities": {
+      "urgent": "عاجل",
+      "high": "مرتفع",
+      "medium": "متوسط",
+      "low": "منخفض"
+    },
+    "doesNotRepeat": "لا يتكرر",
+    "hints": {
+      "recurrenceNeedsDeadline": "حدد موعدًا نهائيًا قبل إضافة فترة التكرار"
+    },
+    "actions": {
+      "addEstimate": "أضف تقدير",
+      "clearEstimate": "تقدير واضح",
+      "addRecurrence": "أضف فترة",
+      "clearRecurrence": "فترة واضحة",
+      "delete": "حذف",
+      "loadMoreInternalControls": "تحميل المزيد",
+      "loadMoreFindings": "تحميل المزيد",
+      "removeInternalControl": "إزالة",
+      "unlinkFinding": "فك الارتباط عن البحث",
+      "cancel": "إلغاء",
+      "retry": "إعادة المحاولة"
+    },
+    "delete": {
+      "title": "حذف المهمة",
+      "description": "هل أنت متأكد أنك تريد حذف هذه المهمة؟",
+      "loadError": "لم يكن من الممكن تحميل ضوابط النظام الداخلية المتبقية.",
+      "confirm": "حذف"
+    },
+    "messages": {
+      "updated": "تم تحديث المهمة بنجاح.",
+      "deleted": "تم حذف المهمة بنجاح."
+    },
+    "linear": {
+      "connect": "ربط خطي",
+      "publish": "إنشاء",
+      "link": "رابط",
+      "linkTo": "رابط إلى",
+      "unlink": "إلغاء الربط",
+      "team": "فريق خطي",
+      "issue": "مشكلة خطية",
+      "chooseTeam": "اختر الفريق",
+      "noTeam": "لا فريق",
+      "chooseIssue": "اختر المشكلة",
+      "newIssue": "قضية جديدة",
+      "searchTeam": "البحث بالاسم أو الرقم التعريفي",
+      "searchIssue": "البحث بالاسم أو الرقم التعريفي",
+      "linkHint": "رابط لمشكلة خطية",
+      "linkedIssue": "مرتبط بالمشكلة <issue>{{issue}}</issue>",
+      "noResults": "لا نتائج",
+      "loadMore": "تحميل المزيد",
+      "retry": "حاول مرة أخرى",
+      "createWithoutTeam": "أنشئ بدون فريق Linear",
+      "published": "تم إنشاء المهمة في Linear.",
+      "linked": "مهمة مرتبطة بـ Linear.",
+      "unlinked": "مشكلة خطية غير مرتبطة.",
+      "errors": {
+        "publish": "فشل في إنشاء المهمة في Linear",
+        "link": "فشل في ربط المهمة بـ Linear",
+        "unlink": "فشل في فصل مشكلة Linear",
+        "load": "تعذر عرض Linear"
+      }
+    },
+    "asana": {
+      "noResults": "لا نتائج",
+      "loadMore": "تحميل المزيد",
+      "errors": {
+        "load": "تعذر عرض أسانا",
+        "publish": "فشل في إنشاء مهمة في Asana",
+        "link": "فشل في ربط المهمة بـ آسنا",
+        "unlink": "فشل في فصل مهمة Asana"
+      },
+      "publish": "إنشاء",
+      "link": "رابط",
+      "linkTo": "رابط إلى",
+      "unlink": "إلغاء الربط",
+      "project": "مشروع أسانا",
+      "task": "مهمة أسانا",
+      "chooseProject": "اختر المشروع",
+      "noProject": "لا مشروع",
+      "chooseTask": "اختر مهمة",
+      "newTask": "مهمة جديدة",
+      "searchProject": "البحث بالاسم",
+      "searchTask": "البحث بالاسم",
+      "linkHint": "رابط إلى Asana",
+      "linkedTask": "مرتبط بالمهمة <task>{{task}}</task>",
+      "published": "تم إنشاء المهمة في أسانا.",
+      "linked": "المهمة مرتبطة بـ Asana.",
+      "unlinked": "تم فصل مهمة Asana."
+    },
+    "errors": {
+      "delete": "فشل في حذف المهمة",
+      "update": "فشل في تحديث المهمة",
+      "content": "تعذر عرض هذا الوصف",
+      "linkFinding": "فشل في ربط النتيجة",
+      "unlinkFinding": "فشل في فصل الاكتشاف"
+    },
+    "comments": {
+      "title": "التعليقات",
+      "empty": "لا توجد تعليقات بعد",
+      "authorFallback": "شخص",
+      "fields": {
+        "comment": "تعليق",
+        "leaveAComment": "اترك تعليقاً…"
+      },
+      "actions": {
+        "submit": "أضف تعليق",
+        "send": "إرسال",
+        "edit": "تحرير التعليق",
+        "save": "حفظ",
+        "cancel": "إلغاء",
+        "delete": "حذف التعليق",
+        "showMore": "عرض المزيد"
+      },
+      "delete": {
+        "title": "حذف التعليق",
+        "description": "هل أنت متأكد أنك تريد حذف هذا التعليق؟",
+        "confirm": "حذف"
+      },
+      "messages": {
+        "created": "تمت إضافة التعليق بنجاح.",
+        "updated": "تم تحديث التعليق بنجاح.",
+        "deleted": "تم حذف التعليق بنجاح."
+      },
+      "errors": {
+        "create": "فشل في إضافة التعليق",
+        "update": "فشل في تحديث التعليق",
+        "delete": "فشل في حذف التعليق",
+        "content": "تعذر عرض هذا التعليق",
+        "contentRequired": "أدخل تعليقًا",
+        "contentTooLong": "يجب ألا يزيد التعليق عن {{max}} حرفًا"
+      }
+    },
+    "activity": {
+      "title": "نشاط",
+      "empty": "لا توجد أي نشاط حتى الآن",
+      "actorFallback": "شخص",
+      "justNow": "الآن فقط",
+      "commented": "<name>{{name}}</name> <time>{{time}}</time>",
+      "actions": {
+        "showMore": "عرض المزيد"
+      }
+    }
+  },
+  "settingsDialog": {
+    "trigger": "الإعدادات",
+    "title": "الإعدادات",
+    "integrations": {
+      "title": "تكامل المهام",
+      "description": "قم بربط Linear أو Asana لنشر المهام والحفاظ على الاسم والوصف والموعد النهائي والمكلف والتعليقات والملفات والإشارات متزامنة في كلا الاتجاهين. يطابق الأشخاص عن طريق البريد الإلكتروني."
+    },
+    "linear": {
+      "name": "خطي",
+      "description": "يتم أيضًا مزامنة الحالة والأولوية.",
+      "defaultTeam": "الفريق الافتراضي",
+      "defaultTeamDescription": "المهام الجديدة تستخدم هذا الفريق الخطي ما لم يتم اختيار فريق آخر.",
+      "defaultTeamReadOnly": "ليس لديك إذن لتغيير الفريق الافتراضي.",
+      "noDefaultTeam": "لا فريق افتراضي",
+      "issueImport": "استيراد القضايا الجديدة",
+      "issueImportDescription": "يقوم Active بإنشاء مهمة Probo لكل مشكلة جديدة في الفريق الافتراضي ويحافظ على مزامنتها.",
+      "issueImportReadOnly": "ليس لديك إذن لتغيير استيراد المشكلة.",
+      "issueImportNeedsTeam": "اختر فريقًا افتراضيًا قبل تفعيل استيراد القضايا.",
+      "issueImportStatus": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "disconnect": {
+        "title": "فصل خطي؟",
+        "description": "لن تتزامن المهام مع Linear بعد الآن. يمكنك الاتصال مرة أخرى لاحقًا.",
+        "confirm": "قطع الاتصال"
+      },
+      "messages": {
+        "disconnected": "منفصل خطي",
+        "defaultTeamSaved": "تم حفظ الفريق الافتراضي.",
+        "issueImportSaved": "تم حفظ استيراد المشكلة."
+      },
+      "errors": {
+        "connect": "فشل في الاتصال بـ Linear",
+        "disconnect": "فشل في فصل Linear",
+        "defaultTeam": "فشل في حفظ الفريق الافتراضي",
+        "issueImport": "فشل في حفظ استيراد المشكلة"
+      }
+    },
+    "asana": {
+      "name": "أسانا",
+      "description": "يستخدم خريطة مشروع للحالة والأولوية.",
+      "defaultProject": "المشروع الافتراضي",
+      "defaultProjectDescription": "يتم نشر المهام الجديدة في هذا المشروع ما لم يتم اختيار مشروع آخر. اتركه فارغًا للاحتفاظ بالمهام الجديدة في بروبو.",
+      "noDefaultProject": "لا يوجد مشروع افتراضي",
+      "searchProject": "ابحث عن المشاريع",
+      "chooseProject": "اختر مشروعًا",
+      "taskImport": "استيراد مهام جديدة",
+      "taskImportDescription": "يقوم Active بإنشاء مهمة Probo لكل مهمة جديدة في المشروع الافتراضي.",
+      "taskImportReadOnly": "ليس لديك إذن لتغيير استيراد المهمة.",
+      "taskImportNeedsProject": "اختر مشروعًا افتراضيًا قبل تفعيل استيراد المهام.",
+      "taskImportStatus": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "mapping": "تحديد الدولة والأولوية",
+      "customFieldsUnavailable": "لا يمكن تعيين الأولوية لأن مساحة العمل هذه في Asana لا تتضمن حقولًا مخصصة. لا يزال يمكن للحالة اتباع الأقسام. تحتاج مساحة العمل المتصلة بـ Asana إلى خطة مدفوعة لتعيين الأولوية.",
+      "mappingHint": "اختر مشروعًا لرسم خريطة أقسامه وحقل الأولوية. حتى تقوم بحفظ الخريطة، تتبع الحالة ما إذا كانت مهمة Asana مكتملة.",
+      "loadingMapping": "جارٍ تحميل المشروع…",
+      "noSection": "لا تحرك القسم",
+      "priorityField": "حقل الأولوية",
+      "noPriority": "لا تزامن الأولوية",
+      "noOption": "تجاهل",
+      "saveMapping": "حفظ التعيين",
+      "deleteMapping": "حذف التعيين",
+      "deleteMappingTitle": "حذف التعيين?",
+      "deleteMappingDescription": "ستتابع الحالة ما إذا كانت مهمة Asana مكتملة حتى تقوم بحفظ تعيين جديد.",
+      "disconnect": {
+        "title": "فصل Asana?",
+        "description": "لن تتم مزامنة المهام مع Asana بعد الآن. يمكنك الاتصال مرة أخرى لاحقًا.",
+        "confirm": "قطع الاتصال"
+      },
+      "messages": {
+        "disconnected": "تم فصل Asana.",
+        "defaultProjectSaved": "تم حفظ المشروع الافتراضي.",
+        "taskImportSaved": "تم حفظ استيراد المهمة.",
+        "mappingSaved": "تم حفظ التخطيط.",
+        "mappingDeleted": "تم حذف التخطيط."
+      },
+      "errors": {
+        "connect": "فشل في الاتصال بـ Asana",
+        "disconnect": "فشل في فصل Asana",
+        "defaultProject": "فشل في حفظ المشروع الافتراضي",
+        "taskImport": "فشل في حفظ استيراد المهمة",
+        "mapping": "فشل في حفظ التعيين",
+        "deleteMapping": "فشل في حذف التعيين"
+      }
+    },
+    "status": {
+      "connected": "متصل",
+      "notConnected": "غير متصل"
+    },
+    "actions": {
+      "connect": "اتصل",
+      "disconnect": "قطع الاتصال",
+      "close": "إغلاق"
+    }
+  },
+  "newPage": {
+    "title": "أضف مهمة",
+    "fields": {
+      "namePlaceholder": "اسم المهمة"
+    },
+    "actions": {
+      "create": "إنشاء مهمة"
+    },
+    "messages": {
+      "created": "تم إنشاء المهمة بنجاح."
+    },
+    "errors": {
+      "create": "فشل في إنشاء المهمة",
+      "nameRequired": "أدخل اسم المهمة"
+    }
+  }
+}

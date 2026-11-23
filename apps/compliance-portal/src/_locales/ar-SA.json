@@ -1,0 +1,121 @@
+{
+  "topBar": {
+    "tagline": "بوابة الامتثال",
+    "getAccess": "طلب الانضمام",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "menuTitle": "القائمة",
+    "nav": {
+      "documents": "الوثائق",
+      "subprocessors": "المعالجون الفرعيون",
+      "updates": "التحديثات",
+      "requests": "طلبات الخصوصية"
+    }
+  },
+  "userMenu": {
+    "subscribe": "الاشتراك في التحديثات",
+    "subscribed": "تم الاشتراك في التحديثات",
+    "signOut": "تسجيل الخروج",
+    "signOutFailed": "لا يمكن تسجيل الخروج",
+    "switchToDarkMode": "التبديل إلى الوضع الليلي",
+    "switchToLightMode": "التبديل إلى الوضع الفاتح"
+  },
+  "locale": {
+    "label": "اللغة",
+    "updateFailed": "تعذّر تحديث اللغة",
+    "mismatch": {
+      "message": "أنت تشاهد هذه الصفحة باللغة {{language}}.",
+      "switchToMine": "التبديل إلى {{language}}",
+      "useThis": "استخدام {{language}} كلغتي",
+      "dismiss": "تجاهل"
+    }
+  },
+  "common": {
+    "error": "حدث خطأ ما",
+    "previousPage": "الصفحة السابقة",
+    "nextPage": "الصفحة التالية",
+    "pageOf": "الصفحة {{current}} من {{total}}",
+    "zoomOut": "تصغير",
+    "zoomIn": "تقريب"
+  },
+  "auth": {
+    "requestAccess": {
+      "success": "تم طلب الوصول"
+    },
+    "fullName": {
+      "title": "أضف اسمك.",
+      "label": "الاسم الكامل",
+      "placeholder": "محمد أحمد",
+      "required": "الاسم الكامل مطلوب",
+      "tooShort": "الاسم الكامل قصير جدًا",
+      "submit": "متابعة"
+    },
+    "errors": {
+      "fullNameFailed": "تعذّر حفظ اسمك. يُرجى المحاولة مرة أخرى.",
+      "requestFailed": "تعذّر إكمال طلب الوصول الخاص بك. يُرجى المحاولة مرة أخرى."
+    }
+  },
+  "home": {
+    "heroTitle": "الامتثال في {{name}}.",
+    "heroDescription": "مرحبًا بكم في بوابة الامتثال. ستجدون هنا وثائقنا الأمنية وشهاداتنا.",
+    "sections": {
+      "compliance": "الامتثال",
+      "securityCommitments": "الالتزامات الأمنية",
+      "trustedBy": "موثوق به من قبل",
+      "recentUpdates": "أحدث التحديثات"
+    },
+    "compliance": {
+      "viewDocuments": "عرض الوثائق"
+    },
+    "recentUpdates": {
+      "viewAll": "عرض الكل"
+    }
+  },
+  "notFound": {
+    "title": "لم يتم العثور على الصفحة",
+    "description": "عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "errors": {
+    "notFound": {
+      "title": "لم يتم العثور على الصفحة",
+      "description": "الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها."
+    },
+    "forbidden": {
+      "title": "الوصول مرفوض",
+      "description": "ليس لديك إذن لعرض هذه الصفحة. اطلب الوصول أو ارجع إلى بوابة الامتثال."
+    },
+    "serverError": {
+      "title": "حدث خطأ ما",
+      "description": "حدث خطأ ما من جانبنا. حاول مرة أخرى، أو اتصل بالدعم إذا استمرت المشكلة."
+    },
+    "generic": {
+      "title": "تعذّر تحميل الصفحة",
+      "description": "تعذّر علينا تحميل هذه الصفحة. حاول مرة أخرى، أو اتصل بالدعم إذا استمرت المشكلة."
+    },
+    "actions": {
+      "backToCompliancePortal": "العودة إلى بوابة الامتثال",
+      "tryAgain": " المحاولة مرة أخرى",
+      "contactSupport": "الاتصال بالدعم",
+      "requestAccess": "طلب الوصول"
+    },
+    "inline": {
+      "message": "تعذّر تحميل المحتوى",
+      "retry": "إعادة المحاولة"
+    }
+  },
+  "footer": {
+    "poweredBy": "بواسطة"
+  },
+  "pagination": {
+    "previous": "الصفحة السابقة",
+    "next": "الصفحة التالية"
+  },
+  "nda": {
+    "unsignedBanner": {
+      "message": "وقِّع اتفاقية عدم الإفصاح للوصول إلى المستندات الخاصة.",
+      "sign": "المراجعة والتوقيع",
+      "dismiss": "تجاهل"
+    }
+  }
+}

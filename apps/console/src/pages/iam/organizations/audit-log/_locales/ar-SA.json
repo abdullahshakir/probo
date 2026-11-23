@@ -1,0 +1,90 @@
+{
+  "auditLogPage": {
+    "title": "سجل التدقيق",
+    "description": "تم تسجيل قرارات التفويض لهذه مساحة العمل، بما في ذلك القراءات.",
+    "empty": {
+      "title": "لا توجد أي سجلات تدقيق بعد",
+      "description": "تظهر عمليات التحقق من التفويض هنا حيث يتم تسجيلها.",
+      "filteredTitle": "لا توجد مدخلات مطابقة",
+      "filteredDescription": "جرّب إجراءً أو نتيجة مختلفة، أو نطاقًا زمنيًا مختلفًا.",
+      "clear": "مسح الفلاتر"
+    },
+    "columns": {
+      "when": "متى",
+      "actor": "ممثل",
+      "action": "عمل",
+      "target": "هدف",
+      "outcome": "نتيجة"
+    },
+    "actions": {
+      "previous": "السابق",
+      "next": "التالي",
+      "openEntry": "عرض سجل التدقيق من {{when}}"
+    },
+    "actorTypes": {
+      "USER": "مستخدم",
+      "API_KEY": "مفتاح API",
+      "SYSTEM": "نظام"
+    },
+    "outcomes": {
+      "ALLOWED": "مسموح",
+      "DENIED": "مرفوض"
+    },
+    "filters": {
+      "actorType": "نوع الممثل",
+      "allActorTypes": "جميع أنواع الممثلين",
+      "action": "عمل",
+      "actionPlaceholder": "iam:organization:get أو iam:*",
+      "outcome": "نتيجة",
+      "allOutcomes": "جميع النتائج",
+      "actorId": "معرّف الممثل",
+      "resourceType": "نوع المورد",
+      "resourceId": "معرّف المورد",
+      "from": "من",
+      "to": "إلى",
+      "dates": "نطاق التاريخ",
+      "datesPlaceholder": "أي تاريخ",
+      "datesHint": "اختر تاريخ البدء، ثم تاريخ الانتهاء.",
+      "clearDates": "تواريخ واضحة",
+      "more": "الفلاتر",
+      "moreCount_one": "الفلاتر ({{count}})",
+      "moreCount_other": "الفلاتر ({{count}})",
+      "requestId": "معرّف الطلب",
+      "range": "تاريخ البدء بعد تاريخ الانتهاء."
+    },
+    "entry": {
+      "title": "سجل تدقيق",
+      "actor": "ممثل",
+      "actorId": "معرّف الممثل",
+      "action": "عمل",
+      "target": "هدف",
+      "outcome": "نتيجة",
+      "when": "متى",
+      "recordedAt": "مسجل",
+      "originIp": "عنوان IP الأصلي",
+      "userAgent": "وكيل المستخدم",
+      "requestId": "معرّف الطلب",
+      "denialReason": "سبب الرفض",
+      "close": "إغلاق"
+    },
+    "export": {
+      "title": "تصدير سجل التدقيق",
+      "description": "حدد نطاقًا زمنيًا لتصدير سجلات التدقيق كملف CSV. ستتلقى بريدًا إلكترونيًا يحتوي على رابط التنزيل.",
+      "fields": {
+        "from": "من",
+        "to": "إلى",
+        "range": "نطاق التاريخ"
+      },
+      "actions": {
+        "export": "تصدير",
+        "cancel": "إلغاء"
+      },
+      "messages": {
+        "success": "تم بدء التصدير. ستتلقى بريدًا إلكترونيًا يحتوي على رابط التحميل عندما يكون جاهزًا."
+      },
+      "errors": {
+        "request": "فشل في طلب تصدير سجل التدقيق"
+      }
+    }
+  }
+}

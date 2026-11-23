@@ -26,9 +26,11 @@ import {
   isUrlLocale,
   urlLocaleToLanguage,
 } from "#/lib/i18n/locale";
+import { isRtlLanguage } from "#/lib/i18n/resolveLanguage";
 
-// Syncs i18next and <html lang> with the `/:lang` route param. Locale validation
-// and unprefixed redirects happen in the route loader before this mounts.
+// Syncs i18next and <html lang/dir> with the `/:lang` route param. Locale
+// validation and unprefixed redirects happen in the route loader before this
+// mounts.
 export function LocaleLayout() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -42,6 +44,7 @@ export function LocaleLayout() {
       void i18n.changeLanguage(language);
     }
     document.documentElement.lang = lang;
+    document.documentElement.dir = isRtlLanguage(language) ? "rtl" : "ltr";
   }, [lang, i18n]);
 
   return <Outlet />;

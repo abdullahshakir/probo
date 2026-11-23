@@ -1,0 +1,911 @@
+{
+  "bannerTranslationSection": {
+    "title": "بانر",
+    "policyLinkHelp": "استخدم {{cookie_policy_link}} و {{privacy_policy_link}} لإدراج روابط السياسات."
+  },
+  "panelTranslationSection": {
+    "title": "لوحة التفضيلات",
+    "necessaryCategoryHelp": "استخدم {{necessary_category}} للإشارة إلى اسم فئة ملفات تعريف الارتباط المطلوبة.",
+    "accessibilityLabels": "تسميات إمكانية الوصول",
+    "categoryNames": "أسماء الفئات",
+    "translatedName": "الاسم المترجم",
+    "translatedDescription": "الوصف المترجم"
+  },
+  "placeholderTranslationSection": {
+    "title": "نائب",
+    "description": "معروض مكان المحتوى المحظور حتى يمنح الزائر الموافقة.",
+    "categoryHelp": "استخدم {{category}} للإشارة إلى فئة المحتوى."
+  },
+  "translationEditor": {
+    "messages": {
+      "successTitle": "النجاح",
+      "saved": "تم حفظ الترجمة"
+    },
+    "errors": {
+      "title": "خطأ",
+      "save": "فشل في حفظ الترجمة"
+    },
+    "exampleCategory": "تحليلات",
+    "actions": {
+      "saving": "جارٍ الحفظ...",
+      "save": "حفظ الترجمات"
+    },
+    "labels": {
+      "bannerTitle": "عنوان الشعار",
+      "bannerDescription": "وصف الشعار",
+      "acceptAllButton": "زر قبول الكل",
+      "rejectAllButton": "رفض جميع الأزرار",
+      "customizeButton": "زر التخصيص",
+      "cookiePolicyLinkText": "نص رابط سياسة الكوكيز",
+      "privacyPolicyLinkText": "نص رابط سياسة الخصوصية",
+      "panelTitle": "عنوان اللوحة",
+      "panelDescription": "وصف اللوحة",
+      "saveButton": "زر الحفظ",
+      "ariaClose": "إغلاق (ARIA)",
+      "ariaShowDetails": "عرض التفاصيل (ARIA)",
+      "ariaHideDetails": "إخفاء التفاصيل (ARIA)",
+      "ariaCookieSettings": "إعدادات ملفات تعريف الارتباط (ARIA)",
+      "placeholderText": "نص نائب",
+      "placeholderButton": "زر العنصر النائب"
+    }
+  },
+  "translationsPage": {
+    "title": "ترجمات",
+    "description": "قم بتحرير البانر ولوحة التفضيلات ونسخة العنصر النائب لكل لغة.",
+    "language": "لغة",
+    "necessaryFallback": "ضروري",
+    "languageDefault": "{{language}} (الافتراضي)",
+    "defaultLanguageDescription": "هذه هي اللغة الافتراضية. تُعرض هذه الترجمات عندما لا تتوفر لغة الزائر."
+  },
+  "trackerAttribution": {
+    "firstParty": "الحزب الأول",
+    "thirdParty": "طرف ثالث",
+    "visitorSoftware": "برنامج الزائر",
+    "undetermined": "غير محدد"
+  },
+  "trackerPatternRow": {
+    "messages": {
+      "trackerDeleted": "تم حذف المتعقب",
+      "cookieMoved": "تحرك كوكي"
+    },
+    "errors": {
+      "deleteTracker": "فشل في حذف المتتبع",
+      "moveCookie": "فشل في نقل الكوكي",
+      "updateCookie": "فشل في تحديث الكوكي"
+    },
+    "deleteConfirmation": "هل أنت متأكد أنك تريد حذف \"{{name}}\"؟",
+    "dialogs": {
+      "deleteTitle": "حذف المتعقب"
+    },
+    "actions": {
+      "include": "تضمين",
+      "exclude": "استبعاد",
+      "delete": "حذف",
+      "cancel": "إلغاء",
+      "more": "المزيد من الإجراءات",
+      "description": "عرض الوصف",
+      "sourceBanner": "عرض لافتة المصدر"
+    },
+    "types": {
+      "cookie": "بسكويت",
+      "cookieShort": "ج",
+      "localStorage": "التخزين المحلي",
+      "localStorageShort": "إل إس",
+      "sessionStorage": "تخزين الجلسة",
+      "sessionStorageShort": "إس إس",
+      "indexedDb": "قاعدة بيانات مفهرسة",
+      "indexedDbShort": "بنك التنمية الإسلامي",
+      "cacheStorage": "تخزين الذاكرة المؤقتة",
+      "cacheStorageShort": "علوم الحاسوب"
+    },
+    "sources": {
+      "script": "نص",
+      "preExisting": "موجود مسبقًا",
+      "http": "إتش تي تي بي",
+      "extension": "امتداد"
+    },
+    "sourceVia": "عبر {{origin}}",
+    "duration": {
+      "session": "جلسة",
+      "persistent": "مثابر"
+    }
+  },
+  "trackerProperties": {
+    "messages": {
+      "moved": "تحرك كوكي",
+      "updated": "تم تحديث المتعقب",
+      "copiedTitle": "تم النسخ",
+      "idCopied": "تم نسخ معرف المتعقب الشائع إلى الحافظة"
+    },
+    "errors": {
+      "title": "خطأ",
+      "move": "فشل في نقل الكوكي",
+      "update": "فشل في تحديث المتتبع",
+      "copy": "فشل نسخ معرف المتعقب المشترك"
+    },
+    "properties": {
+      "attribution": "الإسناد",
+      "sourceId": "مصدر",
+      "category": "الفئة",
+      "maxAge": "الحد الأقصى للعمر",
+      "maxAgeUnit": "وحدة",
+      "description": "الوصف",
+      "descriptionPlaceholder": "الوصف"
+    },
+    "actions": {
+      "back": "متعقبات",
+      "copyId": "نسخ معرف المتتبع الشائع"
+    },
+    "attribution": {
+      "firstParty": "هذا متتبّع من الطرف الأوّل.",
+      "visitorSoftware": "تم إعداد هذا المتعقِب بواسطة برنامج الزائر.",
+      "thirdParty": "هذا متتبع تابع لجهة خارجية من {{name}}.",
+      "thirdPartyUnnamed": "هذا متتبّع تابع لطرف ثالث.",
+      "undetermined": "لم يتم تحديد نسب هذا المتتبع."
+    },
+    "manual": "يدوي"
+  },
+  "detectedTrackersSection": {
+    "title": "اكتشافات",
+    "columns": {
+      "identifier": "المعرف",
+      "domain": "نطاق",
+      "initiatorUrl": "عنوان URL للمُبادر",
+      "maxAge": "أقصى عمر (بالثواني)",
+      "source": "مصدر",
+      "seenBy": "شوهد من قبل",
+      "firstSeen": "رُؤي لأول مرة"
+    },
+    "empty": "لم يتم اكتشاف أي شيء لهذا المتتبع بعد.",
+    "sort": {
+      "initiatorUrl": "الترتيب حسب رابط المبادِر",
+      "firstSeen": "رتب حسب الظهور الأول"
+    },
+    "actions": {
+      "showMore": "عرض المزيد"
+    },
+    "promotedNote": "هذه الاكتشافات من هذا الشعار. تم رصد المصدر {{source}} في {{origin}}.",
+    "summary_one": "كشف {{count}}",
+    "summary_other": "كشف {{count}}"
+  },
+  "moveToCategorySelect": {
+    "empty": "لا توجد فئات"
+  },
+  "observers": {
+    "sdk": "زوار",
+    "scanner": "مسح"
+  },
+  "detectedTrackerRow": {
+    "hostOnly": "خاص بالمضيف",
+    "duration": {
+      "second_one": "{{count}} ثانية",
+      "second_other": "{{count}} ثانية"
+    },
+    "details": {
+      "label": "تفاصيل الكوكي",
+      "httpOnly": "خاص بـ HttpOnly",
+      "secure": "آمن",
+      "sameSite": "نفس_الموقع",
+      "sameSiteStrict": "صارم",
+      "sameSiteLax": "متراخٍ",
+      "sameSiteNone": "لا شيء",
+      "partitioned": "مقسّم",
+      "setBy": "تم التعيين بواسطة",
+      "valueSize": "حجم القيمة",
+      "yes": "نعم",
+      "no": "لا",
+      "bytes_one": "{{count}} بايت",
+      "bytes_other": "{{count}} بايت"
+    }
+  },
+  "trackersPage": {
+    "title": "متعقبات",
+    "description": "المتعقبات التي تم اكتشافها بواسطة هذا الشعار والفئة التي ينتمي إليها كل واحد منها.",
+    "filters": {
+      "search": "ابحث بالاسم أو الوصف...",
+      "allThirdParties": "جميع الأطراف الثالثة",
+      "allCategories": "جميع الفئات",
+      "allObservers": "أي مراقب",
+      "source": "مصدر",
+      "type": "نوع",
+      "category": "الفئة",
+      "thirdParty": "طرف ثالث",
+      "observedBy": "شوهد من قبل",
+      "selectedCount": "{{count}} مختار"
+    },
+    "types": {
+      "all": "جميع الأنواع",
+      "cookie": "بسكويت",
+      "localStorage": "التخزين المحلي",
+      "sessionStorage": "تخزين الجلسة",
+      "indexedDb": "قاعدة بيانات مفهرسة",
+      "cacheStorage": "تخزين الذاكرة المؤقتة"
+    },
+    "sources": {
+      "all": "جميع المصادر",
+      "script": "نص",
+      "preExisting": "موجود مسبقًا",
+      "http": "إتش تي تي بي",
+      "extension": "امتداد"
+    },
+    "columns": {
+      "name": "الاسم",
+      "attribution": "الإسناد",
+      "source": "مصدر",
+      "seenBy": "شوهد من قبل",
+      "category": "الفئة",
+      "hits": "ضربات",
+      "hitsHint": "الزيارات خلال آخر 30 يومًا"
+    },
+    "sort": {
+      "name": "الترتيب حسب الاسم",
+      "source": "الترتيب حسب المصدر"
+    },
+    "actions": {
+      "previous": "السابق",
+      "next": "التالي",
+      "new": "متعقب جديد"
+    },
+    "views": {
+      "categorised": "مصنف",
+      "uncategorised": "غير مصنف",
+      "sdk": "من الزوار",
+      "scan": "من المسح",
+      "all": "جميع المتعقبات",
+      "ariaLabel": "عرض قائمة المتعقبات"
+    },
+    "empty": {
+      "title": "لا متتبعات",
+      "description": "لم يتم اكتشاف أي متعقبات بعد. ستظهر هنا عند اكتشافها.",
+      "categorised": "لا تُعرض أي متتبعات مصنفة على الشريط الإعلاني.",
+      "uncategorised": "لا يوجد متتبعات غير مصنفة.",
+      "sdk": "لم يتم الإبلاغ عن أي متتبعات من قبل الزوار حتى الآن.",
+      "scan": "لم يتم العثور على أي متتبعات بواسطة الفحص حتى الآن."
+    },
+    "emptyFiltered": "لا توجد متتبعات مطابقة"
+  },
+  "installPage": {
+    "title": "تثبيت",
+    "description": "أضف هذا المقتطف إلى موقعك حتى يتمكن الشريط من التحميل وتسجيل الموافقة."
+  },
+  "settingsPage": {
+    "title": "الإعدادات",
+    "description": "الإعدادات والفئات لشريط ملفات تعريف الارتباط هذا."
+  },
+  "bannerLifecycleSection": {
+    "title": "حالة الشعار",
+    "description": "قم بتنشيط الشريط لعرضه للزوار، أو قم بإلغاء تنشيطه لإزالته."
+  },
+  "codeSnippets": {
+    "messages": {
+      "copiedTitle": "تم النسخ",
+      "copied": "تم نسخ الرمز إلى الحافظة"
+    },
+    "errors": {
+      "title": "خطأ",
+      "copy": "فشل النسخ إلى الحافظة"
+    },
+    "actions": {
+      "copy": "نسخ"
+    },
+    "documentation": "هل تبحث عن وحدة ES أو تكامل بدون رأس؟ <link>راجع وثائقنا للحصول على أدلة تكامل مفصلة.</link>",
+    "tcfNote": "يستخدم هذا الشريط النصي IAB TCF. ضع المقتطف في أعلى الصفحة قدر الإمكان حتى يتمكن البائعون من الانتظار قبل تحميل SDK."
+  },
+  "bannerSettingsForm": {
+    "title": "الإعدادات",
+    "messages": {
+      "successTitle": "النجاح",
+      "updated": "تم تحديث إعدادات الشعار"
+    },
+    "errors": {
+      "title": "خطأ",
+      "update": "فشل التحديث",
+      "publisherCountryCode": "يجب أن يكون AA أو رمز دولة حسب معيار ISO 3166-1 alpha-2"
+    },
+    "fields": {
+      "name": "الاسم",
+      "origin": "رابط المصدر",
+      "cookiePolicyUrl": "عنوان URL لسياسة الكوكيز",
+      "privacyPolicyUrl": "رابط سياسة الخصوصية",
+      "consentExpiryDays": "انتهاء صلاحية الموافقة (أيام)",
+      "defaultLanguage": "اللغة الافتراضية",
+      "publisherCountryCode": "بلد الناشر",
+      "publisherCountryCodeHelp": "دولة تأسيس IAB TCF (ISO 3166-1 alpha-2). استخدم AA إذا لم يتم التحديد.",
+      "forceOptIn": "فرض الاشتراك الاختياري",
+      "forceOptInHelp": "عرض لافتة الاشتراك لجميع الزوار، بما في ذلك في الولايات القضائية التي تسمح بالانسحاب وإشعار الخصوصية.",
+      "resourceReportingEnabled": "تقرير الموارد",
+      "resourceReportingEnabledHelp": "عند التمكين، يقوم SDK للبانر باكتشاف والإبلاغ عن البرامج النصية الخارجية، والإطارات الفرعية، والموارد الأخرى."
+    },
+    "languages": {
+      "english": "الإنجليزية",
+      "french": "الفرنسية",
+      "german": "ألمانية",
+      "spanish": "الإسبانية",
+      "dutch": "هولندي"
+    },
+    "actions": {
+      "saving": "جارٍ الحفظ...",
+      "save": "حفظ"
+    }
+  },
+  "trackerResourceRow": {
+    "messages": {
+      "deleted": "تم حذف المورد",
+      "moved": "تم نقل المورد"
+    },
+    "errors": {
+      "delete": "فشل في حذف المورد",
+      "move": "فشل في نقل المورد",
+      "update": "فشل في تحديث المورد"
+    },
+    "deleteConfirmation": "هل أنت متأكد أنك تريد حذف \"{{name}}\"؟",
+    "dialogs": {
+      "deleteTitle": "حذف المورد"
+    },
+    "actions": {
+      "include": "تضمين",
+      "exclude": "استبعاد",
+      "delete": "حذف",
+      "cancel": "إلغاء",
+      "more": "المزيد من الإجراءات"
+    },
+    "types": {
+      "script": "نص",
+      "iframe": "إطار",
+      "image": "صورة",
+      "stylesheet": "ورقة الأنماط",
+      "font": "خط",
+      "beacon": "منارة",
+      "fetch": "إحضار",
+      "media": "وسائط",
+      "serviceWorker": "عامل الخدمة"
+    }
+  },
+  "resourcesPage": {
+    "title": "الموارد",
+    "description": "البرمجيات النصية، الإطارات المضمنة، وغيرها من الموارد التي يكتشفها هذا الشريط.",
+    "filters": {
+      "search": "ابحث عن طريق الأصل أو المسار...",
+      "type": "نوع"
+    },
+    "types": {
+      "all": "جميع الأنواع",
+      "script": "نص",
+      "iframe": "إطار",
+      "image": "صورة",
+      "stylesheet": "ورقة الأنماط",
+      "font": "خط",
+      "beacon": "منارة",
+      "fetch": "إحضار",
+      "media": "وسائط",
+      "serviceWorker": "عامل الخدمة"
+    },
+    "columns": {
+      "type": "نوع",
+      "origin": "الأصل",
+      "path": "مسار",
+      "category": "الفئة"
+    },
+    "sort": {
+      "origin": "الترتيب حسب الأصل"
+    },
+    "actions": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "empty": {
+      "title": "لا توجد موارد غير مصنفة",
+      "description": "تم تصنيف جميع الموارد المكتشفة. ستظهر الموارد الجديدة هنا عند اكتشافها."
+    },
+    "emptyFiltered": "لا توجد موارد مطابقة"
+  },
+  "scansPage": {
+    "title": "المسح",
+    "description": "تم وضع الزحف في قائمة الانتظار لهذا الشعار. يمكن أن يكون هناك مسح نشط واحد في وقت واحد.",
+    "filters": {
+      "state": "دولة"
+    },
+    "states": {
+      "any": "أي ولاية",
+      "pending": "قيد الانتظار",
+      "running": "الجري",
+      "paused": "متوقف مؤقتًا",
+      "completed": "مكتمل",
+      "failed": "فشل"
+    },
+    "columns": {
+      "requested": "مطلوب",
+      "state": "دولة",
+      "started": "بدأ",
+      "finished": "انتهى",
+      "pages": "صفحات",
+      "cookies": "كوكيز",
+      "storage": "تخزين",
+      "resources": "الموارد"
+    },
+    "sort": {
+      "requested": "رتب حسب التاريخ المطلوب"
+    },
+    "badges": {
+      "truncated": "مقتطع",
+      "truncatedHint": "توقفت هذه المسح ضوئيًا مبكرًا. يزور المسح ضوئيًا على الأكثر {{count}} صفحات، كما يتوقف أيضًا عند نفاد الوقت أو تسجيل عدد كافٍ من العناصر. يتم اختيار الصفحات بعناية بحيث يغطي العينة الموقع بالكامل."
+    },
+    "actions": {
+      "scan": "مسح",
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "empty": {
+      "title": "لا مسح ضوئي",
+      "description": "ابدأ مسحًا لتتبع الموقع واكتشاف المتعقبات."
+    },
+    "emptyFiltered": "لا توجد فحوصات مطابقة",
+    "messages": {
+      "requested": "تم وضع الفحص في قائمة الانتظار"
+    },
+    "errors": {
+      "request": "تعذر بدء الفحص"
+    }
+  },
+  "scanPage": {
+    "actions": {
+      "back": "المسح"
+    },
+    "counts": {
+      "ariaLabel": "نتائج المسح",
+      "pages": "صفحات",
+      "cookies": "كوكيز",
+      "storage": "تخزين",
+      "resources": "الموارد"
+    },
+    "timeline": {
+      "title": "دورة الحياة",
+      "queued": "قيد الانتظار",
+      "started": "بدأ",
+      "finished": "انتهى",
+      "totalElapsed": "إجمالي الوقت المنقضي",
+      "queueTime": "وقت الانتظار في الصف",
+      "runningTime": "مدة التشغيل"
+    },
+    "findings": {
+      "truncated": "توقفت هذه المسح ضوئيًا مبكرًا. يزور المسح ضوئيًا على الأكثر {{count}} صفحات، كما يتوقف أيضًا عند نفاد الوقت أو تسجيل عدد كافٍ من العناصر. يتم اختيار الصفحات بعناية بحيث يغطي العينة الموقع بالكامل.",
+      "page": "صفحة",
+      "scanned": "تم المسح",
+      "showMore": "عرض المزيد",
+      "pagesEmpty": "لا توجد صفحات مسجلة",
+      "pagesNoCheckpoint": "لم تُسجَّل أي صفحات بعد",
+      "pagesFilteredEmpty": "لا توجد صفحات مطابقة",
+      "pagesFilter": {
+        "ariaLabel": "صفحات",
+        "all": "الكل",
+        "scanned": "تم المسح",
+        "notScanned": "لم يتم المسح"
+      },
+      "cookiesEmpty": "لم يتم تسجيل أي كوكيز",
+      "storageEmpty": "لا يوجد تخزين مسجل",
+      "resourcesEmpty": "لا توجد موارد مسجلة"
+    },
+    "checkpoint": {
+      "title": "أحدث نقطة تفتيش",
+      "elapsed": "انقضى",
+      "elapsedValue": "{{seconds}} ثانية",
+      "pagesScanned": "الصفحات الممسوحة",
+      "visited": "الصفحات التي تمت زيارتها",
+      "queue": "قائمة الانتظار المتبقية",
+      "hosts": "المضيفون المغطاة",
+      "truncated": "مقتطع",
+      "yes": "نعم",
+      "no": "لا",
+      "empty": "لا شيء"
+    },
+    "failure": {
+      "unknown": "فشل الفحص.",
+      "unreachable": "كان الموقع غير متاح.",
+      "blocked": "قام الموقع بحظر الفحص.",
+      "noPagesLoaded": "لم يتم تحميل أي صفحات.",
+      "interrupted": "تم إيقاف الفحص.",
+      "internal": "فشل الفحص بسبب خطأ داخلي.",
+      "bannerNotInstalled": "لا يتم تثبيت اللافتة على الموقع.",
+      "differentBanner": "الموقع يعرض لافتة مختلفة."
+    }
+  },
+  "categoryList": {
+    "title": "الفئات",
+    "description": "اضبط ترتيب ظهور الفئات على الشريط. حرر فئة لتغيير اسمها، ورابطها، وتعيينات الموافقة الخاصة بها.",
+    "actions": {
+      "add": "أضف فئة"
+    },
+    "empty": {
+      "title": "لا توجد فئات",
+      "description": "أضف فئة لتجميع خيارات الموافقة على الشعار."
+    }
+  },
+  "categoryListItem": {
+    "required": "مطلوب",
+    "actions": {
+      "moveUp": "تحرك لأعلى",
+      "moveDown": "تحرك للأسفل",
+      "edit": "تحرير الفئة",
+      "delete": "حذف الفئة"
+    },
+    "errors": {
+      "reorder": "فشل في إعادة ترتيب الفئة"
+    }
+  },
+  "categoryDrawer": {
+    "title": "تحرير الفئة",
+    "description": "الاسم، المعرف، وخرائط الموافقة لهذه الفئة.",
+    "fields": {
+      "name": "الاسم",
+      "slug": "حلزون",
+      "slugHelp": "يُستخدم كقيمة لخاصية data-cookie-consent",
+      "description": "الوصف"
+    },
+    "googleConsentMode": {
+      "title": "وضع الموافقة من جوجل",
+      "description": "اختر إشارات وضع موافقة Google التي تتحكم بها هذه الفئة."
+    },
+    "tcfPurposes": {
+      "title": "أغراض TCF",
+      "description": "عندما يكون TCF نشطًا، تُمنح هذه الفئة فقط إذا تم الموافقة على كل غرض محدد أو كان ضمن المصلحة المشروعة."
+    },
+    "posthog": {
+      "title": "بوست هوغ",
+      "description": "تحكم في موافقة تتبع PostHog بناءً على هذه الفئة.",
+      "checkbox": "الاشتراك/إلغاء الاشتراك في تتبع PostHog"
+    },
+    "messages": {
+      "updated": "تم تحديث الفئة"
+    },
+    "errors": {
+      "update": "فشل في تحديث الفئة"
+    },
+    "actions": {
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "close": "إغلاق"
+    }
+  },
+  "categoryCreateDialog": {
+    "title": "أضف فئة",
+    "fields": {
+      "name": "الاسم",
+      "slug": "حلزون",
+      "slugHelp": "يُستخدم كقيمة لخاصية data-cookie-consent",
+      "description": "الوصف"
+    },
+    "messages": {
+      "created": "تم إنشاء الفئة"
+    },
+    "errors": {
+      "create": "فشل في إنشاء الفئة"
+    },
+    "actions": {
+      "create": "إنشاء",
+      "cancel": "إلغاء"
+    }
+  },
+  "deleteCategoryDialog": {
+    "title": "حذف الفئة",
+    "description": "هل تريد حذف الفئة \"{{name}}\"؟ ستنتقل المتتبعات في هذه الفئة إلى غير مصنّف.",
+    "messages": {
+      "deleted": "تم حذف الفئة"
+    },
+    "errors": {
+      "delete": "فشل في حذف الفئة"
+    },
+    "actions": {
+      "delete": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "themeSection": {
+    "title": "موضوع",
+    "description": "تقوم هذه الأدوات فقط بمعاينة المظهر وإنشاء مقتطف CSS. إنها لا تحفظ الأنماط على البانر. أضف المقتطف إلى موقعك بنفسك.",
+    "defaultSnippet": "/* استخدام السمة الافتراضية — لا حاجة لتجاوزات */",
+    "messages": {
+      "copiedTitle": "تم النسخ",
+      "copied": "تم نسخ مقتطف CSS إلى الحافظة"
+    },
+    "errors": {
+      "title": "خطأ",
+      "copy": "فشل في نسخ مقتطف CSS"
+    },
+    "actions": {
+      "reset": "إعادة تعيين للإعدادات الافتراضية",
+      "copy": "نسخ المقتطف"
+    },
+    "variables": {
+      "bg": "خلفية",
+      "text": "نص",
+      "textsecondary": "نص ثانوي",
+      "border": "حدود",
+      "accent": "لهجة",
+      "accenttext": "نص مميز",
+      "radius": "نصف قطر الحدود",
+      "btnradius": "نصف قطر الزر",
+      "fontsize": "حجم الخط",
+      "fontfamily": "عائلة الخط",
+      "shadow": "ظل"
+    },
+    "banner": {
+      "title": "تفضيلات ملفات تعريف الارتباط",
+      "description": "نحن نستخدم الكوكيز لتحسين تجربتك وتحليل حركة المرور على الموقع. <policy>سياسة الخصوصية</policy>",
+      "acceptAll": "قبول الكل",
+      "rejectAll": "رفض الكل",
+      "customize": "تخصيص",
+      "privacyBy": "الخصوصية بواسطة"
+    }
+  },
+  "consentRecordsPage": {
+    "title": "ممر",
+    "description": "خيارات الموافقة التي قام الزوار بها على هذا الشريط.",
+    "filters": {
+      "all": "جميع الإصدارات",
+      "allActions": "جميع الإجراءات",
+      "bannerVersion": "نسخة الشعار",
+      "seeMore": "عرض المزيد"
+    },
+    "actions": {
+      "acceptAll": "قبول الكل",
+      "rejectAll": "رفض الكل",
+      "customize": "تخصيص",
+      "gpc": "GPC",
+      "acknowledge": "اعترف",
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "columns": {
+      "action": "عمل",
+      "bannerVersion": "إصدار",
+      "origin": "الأصل",
+      "regulation": "تنظيم",
+      "location": "الموقع",
+      "date": "تاريخ"
+    },
+    "sort": {
+      "date": "ترتيب حسب التاريخ"
+    },
+    "empty": {
+      "title": "لا توجد سجلات موافقة",
+      "description": "ستظهر سجلات الموافقة هنا بمجرد تفاعل الزوار مع لافتة ملفات تعريف الارتباط الخاصة بك."
+    },
+    "emptyFiltered": "لا توجد سجلات موافقة مطابقة"
+  },
+  "consentRecordPage": {
+    "title": "سجل الموافقة",
+    "description": "تفاصيل خيار موافقة هذا الزائر.",
+    "cards": {
+      "action": "عمل",
+      "request": "طلب",
+      "tcf": "TCF",
+      "categories": "الفئات",
+      "location": "الموقع"
+    },
+    "properties": {
+      "visitorId": "معرّف الزائر",
+      "action": "عمل",
+      "bannerVersion": "إصدار",
+      "origin": "الأصل",
+      "ipAddress": "عنوان بروتوكول الإنترنت",
+      "userAgent": "وكيل المستخدم",
+      "sdkVersion": "إصدار SDK",
+      "regulation": "تنظيم",
+      "date": "تاريخ"
+    },
+    "tcf": {
+      "created": "تم الإنشاء",
+      "lastUpdated": "آخر تحديث",
+      "cmp": "معرّف CMP / الإصدار",
+      "cmpValue": "{{id}} / {{version}}",
+      "tcfPolicyVersion": "نسخة سياسة TCF",
+      "gvlVersion": "إصدار GVL",
+      "language": "لغة",
+      "purposes": "معرفات الغرض",
+      "vendorConsentCount": "موافقة البائع",
+      "decodeError": "تعذر فك تشفير سلسلة TC هذه."
+    },
+    "unknownLocation": "موقع غير معروف",
+    "messages": {
+      "copiedTitle": "تم النسخ"
+    },
+    "errors": {
+      "copyTitle": "خطأ",
+      "copy": "فشل النسخ إلى الحافظة"
+    },
+    "actions": {
+      "copy": "نسخ {{label}}",
+      "accept_all": "قبول الكل",
+      "reject_all": "رفض الكل",
+      "customize": "تخصيص",
+      "gpc": "GPC",
+      "acknowledge": "اعترف"
+    },
+    "consent": {
+      "accepted": "مقبول",
+      "rejected": "مرفوض"
+    }
+  },
+  "configLayout": {
+    "callout": {
+      "version": "v{{version}}",
+      "deactivated": "هذا الشعار معطل ولا يُعرض للزوار.",
+      "deactivatedDraft": "تم تعطيل هذا الشعار ولا يُعرض للزوار. هذا الإصدار يحتوي على تغييرات غير منشورة.",
+      "draft": "هذا الإصدار يحتوي على تغييرات غير منشورة.",
+      "published": "تم نشر هذا الإصدار وهو متاح الآن.",
+      "unpublished": "لم يتم نشر هذه اللافتة بعد."
+    },
+    "messages": {
+      "copiedTitle": "تم النسخ",
+      "activated": "تم تفعيل الشعار",
+      "deactivated": "تم إلغاء تفعيل البانر",
+      "published": "الإصدار المنشور",
+      "idCopied": "تم نسخ معرف اللافتة إلى الحافظة",
+      "deleted": "تم حذف شريط ملفات تعريف الارتباط بنجاح"
+    },
+    "errors": {
+      "title": "خطأ",
+      "activate": "فشل في التفعيل",
+      "deactivate": "فشل في إلغاء التنشيط",
+      "publish": "فشل في النشر",
+      "delete": "فشل في حذف شريط ملفات تعريف الارتباط",
+      "copy": "فشل في نسخ معرف اللوحة الإعلانية"
+    },
+    "deleteConfirmation": "سيؤدي هذا إلى حذف لافتة الكوكيز \"{{name}}\" بشكل دائم. لا يمكن التراجع عن هذا الإجراء.",
+    "dialogs": {
+      "deleteTitle": "حذف شعار الكوكيز"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "actions": {
+      "publish": "نشر التغييرات",
+      "activate": "تفعيل",
+      "deactivate": "إيقاف التفعيل",
+      "delete": "حذف",
+      "cancel": "إلغاء",
+      "copyId": "نسخ معرف الشعار"
+    }
+  },
+  "overview": {
+    "title": "نظرة عامة",
+    "description": "تحميل الصفحة خلال آخر 30 يومًا.",
+    "chart": {
+      "title": "تحميل الصفحة",
+      "total": "إجمالي",
+      "empty": {
+        "title": "لم يتم تحميل أي صفحة بعد",
+        "description": "ستظهر الزيارات من آخر 30 يومًا هنا."
+      }
+    }
+  },
+  "trackerHits": {
+    "chart": "ضربات",
+    "empty": {
+      "title": "لا توجد نتائج بعد",
+      "description": "ستظهر الضربات من آخر 30 يومًا هنا."
+    }
+  },
+  "trackerDiscovery": {
+    "families": {
+      "chrome": "كروم",
+      "edge": "حافة",
+      "firefox": "فايرفوكس",
+      "safari": "سفاري",
+      "other": "آخر"
+    }
+  },
+  "cookieBannersIndex": {
+    "empty": {
+      "title": "لا لافتات ملفات تعريف الارتباط",
+      "description": "لا توجد لافتات ملفات تعريف الارتباط في مساحة العمل هذه بعد."
+    }
+  },
+  "newCookieBannerPage": {
+    "pageTitle": "شريط ملفات تعريف الارتباط الجديد",
+    "title": "إنشاء شعار ملفات تعريف الارتباط",
+    "description": "قم بإعداد لافتة موافقة ملفات تعريف الارتباط جديدة مع عنوان URL الأصلي لها وتكوين الموافقة.",
+    "messages": {
+      "successTitle": "النجاح",
+      "created": "تم إنشاء شريط ملفات تعريف الارتباط بنجاح"
+    },
+    "errors": {
+      "title": "خطأ",
+      "create": "فشل في إنشاء لافتة ملفات تعريف الارتباط"
+    },
+    "fields": {
+      "name": "الاسم",
+      "namePlaceholder": "موقعي الإلكتروني",
+      "origin": "رابط المصدر",
+      "originPlaceholder": "https://example.com",
+      "cookiePolicyUrl": "عنوان URL لسياسة الكوكيز",
+      "cookiePolicyUrlPlaceholder": "https://example.com/cookies",
+      "privacyPolicyUrl": "رابط سياسة الخصوصية",
+      "privacyPolicyUrlPlaceholder": "https://example.com/privacy",
+      "consentExpiryDays": "انتهاء صلاحية الموافقة (أيام)"
+    },
+    "actions": {
+      "creating": "جارٍ الإنشاء...",
+      "create": "إنشاء لافتة"
+    }
+  },
+  "newTrackerPatternPage": {
+    "pageTitle": "متعقب جديد",
+    "title": "إنشاء متعقب",
+    "description": "أضف نمط متعقب وقم بتعيينه إلى فئة على هذا الشعار.",
+    "messages": {
+      "created": "تم إنشاء المتعقب"
+    },
+    "errors": {
+      "title": "خطأ",
+      "create": "فشل في إنشاء المتتبع",
+      "patternStars": "يمكن أن يحتوي النمط على نجمة واحدة على الأكثر.",
+      "category": "اختر فئة",
+      "maxAge": "أدخل مدة صالحة أكبر من الصفر."
+    },
+    "fields": {
+      "pattern": "نمط",
+      "patternPlaceholder": "_ga*",
+      "patternHelp": "علامة * واحدة تطابق أي نص في ذلك الموضع.",
+      "trackerType": "نوع",
+      "category": "الفئة",
+      "categoryPlaceholder": "اختر فئة",
+      "description": "الوصف",
+      "descriptionPlaceholder": "الوصف"
+    },
+    "actions": {
+      "create": "إنشاء متعقب",
+      "cancel": "إلغاء"
+    }
+  },
+  "tcfPage": {
+    "title": "بائعو TCF",
+    "description": "اختر أي من بائعي قائمة البائعين العالمية لـ IAB يكشف هذا الشعار عنهم.",
+    "searchPlaceholder": "ابحث عن البائعين",
+    "stats": {
+      "vendors": "البائعون",
+      "catalog": "كتالوج",
+      "draft": "مسودة",
+      "live": "يعيش",
+      "gvl": "جي في إل",
+      "tcfPolicy": "سياسة TCF",
+      "empty": "—",
+      "version": "v{{version}}",
+      "catalogTotal_one": "بائع {{count}}",
+      "catalogTotal_other": "بائعو {{count}}",
+      "unpublishedAdded_one": "{{count}} بائع للإضافة",
+      "unpublishedAdded_other": "{{count}} بائعين لإضافتهم",
+      "unpublishedRemoved_one": "إزالة البائع {{count}}",
+      "unpublishedRemoved_other": "إزالة بائعي {{count}}",
+      "unpublishedChanged": "{{added}} للإضافة، {{removed}} للإزالة",
+      "unpublishedNever": "لم يُنشر بعد"
+    },
+    "emptyCatalog": "لم يتم استيراد أي بائعين لـ GVL بعد. شغّل gvl-import لملء الكتالوج.",
+    "emptyFiltered": "لا يوجد بائعون مطابقون",
+    "emptyFilteredDescription": "جرّب اسمًا مختلفًا، أو معرف بائع IAB، أو فلتر العضوية.",
+    "filter": {
+      "label": "عضوية البائع",
+      "all": "جميع البائعين",
+      "on": "على هذا الشعار",
+      "off": "ليس على هذا الشعار"
+    },
+    "previous": "السابق",
+    "next": "التالي",
+    "noUpdatePermission": "ليس لديك إذن لتغيير بائعي TCF.",
+    "iabVendorId": "IAB {{id}}",
+    "policy": "سياسة الخصوصية",
+    "notFound": "الصفحة غير موجودة",
+    "actions": {
+      "clearSearch": "مسح الفلاتر",
+      "add": "أضف",
+      "remove": "إزالة",
+      "addVendor": "أضف {{name}} إلى هذا الشعار",
+      "removeVendor": "قم بإزالة {{name}} من هذه اللافتة"
+    },
+    "errors": {
+      "add": "فشل في إضافة البائع",
+      "remove": "فشل في إزالة البائع"
+    }
+  }
+}

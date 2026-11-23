@@ -2150,6 +2150,9 @@
       "continue": "Doorgaan"
     }
   },
+  "locale": {
+    "label": "Taal"
+  },
   "viewerDropdown": {
     "errors": {
       "requestFailed": "Verzoek mislukt",
